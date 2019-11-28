@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <nav class="nav-bar">
+  <nav class="nav-bar" id="nav">
     <div class="nav-bar__main">
       <a href="home.html">
         <img src="assets/img/Logo.svg" alt="Logo" />
@@ -50,9 +50,19 @@
         </a>
       </ul>
       <div class="nav-bar__line"></div>
-      <a href="#" class="nav-bar__search"><img src="assets/img/search.svg" alt="Search" /></a>
+      <a href="#search" class="nav-bar__search"><img src="assets/img/search.svg" alt="Search" /></a>
+
     </div>
 
+    <div class="search" id="search">
+      <input class="search__input" type="text"
+        placeholder="SEARCH FOR DOCUMENT (e.g KADUNA STATE PROPOSED BUDGET 2019 ">
+      <div class="search__btn">
+        <a href="#nav" class="search__link">
+          <p class="search__close">&otimes;</p>
+        </a>
+      </div>
+    </div>
   </nav>
 
   <header class="header header__report header__report--pro-BG">
