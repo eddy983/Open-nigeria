@@ -1,6 +1,10 @@
 .chart {
   padding: 8% $gen-padding;
 
+  @include respond(l-phone) {
+    padding: 8% $gen-padding-small;
+  }
+
   &__card {
     padding: 3% 6%;
     background: $color-white;

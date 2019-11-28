@@ -5,8 +5,35 @@
   background-color: $color-white;
   padding: 2.4rem 10%;
 
+  @include respond(tab-port3) {
+    flex-direction: column;
+  }
+
+  &__main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu {
+    font-size: 2rem;
+    display: none;
+
+    @include respond(tab-port3) {
+      display: block;
+    }
+  }
+
   &__items {
     display: flex;
+    transition: all .3s;
+
+    @include respond(tab-port3) {
+      margin-top: 2.5rem;
+      width: 125%;
+      display: none;
+    }
   }
 
   &__links {
@@ -14,9 +41,9 @@
     list-style-type: none;
     align-items: center;
 
-    @include respond(tab-land2) {
-      //! REMOVE LATER
-      display: none;
+    @include respond(tab-port3) {
+      flex-direction: column;
+      width: 100%;
     }
   }
 
@@ -24,9 +51,21 @@
     margin-right: 4rem;
     font-size: 1.4rem;
 
+    @include respond(tab-port3) {
+      margin-right: 0;
+      padding: 9% 0;
+      text-align: center;
+      border-bottom: 0.25px solid #111704eb;
+    }
+
     &__link {
       color: inherit;
       text-decoration: none;
+
+      @include respond(tab-port3) {
+        background: #e6e6e6;
+        width: 100%;
+      }
 
       &:hover {
         color: $color-green;
@@ -38,5 +77,15 @@
     height: 2.4rem;
     border: 0.5px solid $color-grey-blue;
     margin-right: 4rem;
+
+    @include respond(tab-port3) {
+      display: none;
+    }
+  }
+
+  &__search {
+    @include respond(tab-port3) {
+      display: none;
+    }
   }
 }

@@ -10,31 +10,49 @@
   <!-- css -->
   <link rel="stylesheet" href="assets/css/main.min.css">
   <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <nav class="nav-bar">
-    <a href="home.html">
-      <img src="assets/img/Logo.svg" alt="Logo" />
-    </a>
-    <div class="nav-bar__items">
+    <div class="nav-bar__main">
+      <a href="home.html">
+        <img src="assets/img/Logo.svg" alt="Logo" />
+      </a>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon nav-bar__menu" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+
+
+    </div>
+    <div class="nav-bar__items" id="myLinks">
       <ul class="nav-bar__links">
-        <li class="nav-bar__link">
-          <a href="home.html" class="nav-bar__link__link">HOME</a>
-        </li>
-        <li class="nav-bar__link">
-          <a href="infographics.html" class="nav-bar__link__link">INFOGRAHPICS</a>
-        </li>
-        <li class="nav-bar__link">
-          <a href="interactive.html" class="nav-bar__link__link">INTERACTIVE</a>
-        </li>
-        <li class="nav-bar__link">
-          <a href="reports.html" class="nav-bar__link__link">REPORTS</a>
-        </li>
+        <a href="home.html" class="nav-bar__link__link">
+          <li class="nav-bar__link">
+            HOME
+          </li>
+        </a>
+        <a href="infographics.html" class="nav-bar__link__link">
+          <li class="nav-bar__link">
+            INFOGRAHPICS
+          </li>
+        </a>
+        <a href="interactive.html" class="nav-bar__link__link">
+          <li class="nav-bar__link">
+            INTERACTIVE
+          </li>
+        </a>
+        <a href="infographics.html" class="nav-bar__link__link">
+          <li class="nav-bar__link">
+            REPORTS
+          </li>
+        </a>
       </ul>
       <div class="nav-bar__line"></div>
-      <a href="#"><img src="assets/img/search.svg" alt="Search" /></a>
+      <a href="#" class="nav-bar__search"><img src="assets/img/search.svg" alt="Search" /></a>
     </div>
+
   </nav>
 
   <header class="header">
@@ -225,6 +243,18 @@
 
     </div>
   </div>
+
+  <script>
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
 
 </body>
 
