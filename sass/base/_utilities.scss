@@ -1,0 +1,30 @@
+// POSITIONS
+.relative {
+  position: relative;
+}
+
+// DISPLAY
+.flex {
+  display: flex;
+}
+
+// ALIGNMENT
+.u-center {
+  text-align: center;
+}
+
+// FLEX
+.wrap-tab {
+  flex-wrap: wrap;
+}
+
+.dir-tab {
+  @include respond(tab-land) {
+    flex-direction: column;
+  }
+}
+
+// MARGIN 
+.mb-3r {
+  margin-bottom: 3rem;
+} 

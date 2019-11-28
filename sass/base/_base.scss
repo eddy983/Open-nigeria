@@ -1,0 +1,29 @@
+html {
+  //this defines what 1rem is
+  /* calc = 10/16px which is 0.625
+  then converted to percentage
+  calc = 0.625 x 100 which is 62.5% */
+  font-size: 62.5%;
+
+  @include respond(tab-land) { // width < 1200?
+    font-size: 56.25%; //1 rem = 9px,  9/16 = 56.25%
+  }
+
+  @include respond(tab-port) { // width < 900?
+    font-size: 50%; //1 rem = 8px,  8/16 = 50%
+  }
+
+  @include respond(big-desktop) { // width > 1800?
+    font-size: 75%; //1 rem = 12px,  12/16 = 75%
+  }
+
+}
+
+body {
+  box-sizing: border-box;
+  background: #EBEBEB;
+}
+
+a:-webkit-any-link {
+  color: inherit;
+}

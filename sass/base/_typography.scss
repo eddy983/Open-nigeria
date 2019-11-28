@@ -1,0 +1,155 @@
+body {
+  font-family: "helvetica", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: $color-black;
+}
+
+h1 {
+  font-family: "avenir", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.report {
+  &__title {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 10%;
+
+    @include respond(tab-land) {
+      font-size: 1.6rem;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.news {
+  color: $color-white;
+
+  &__main {
+    &__title {
+      font-size: 2rem;
+      font-weight: bold;
+
+      @include respond(l-phone) {
+        font-size: 1.2rem;
+      }
+    }
+
+    &__sub {
+      margin-top: 1.5%;
+      font-size: 1.4rem;
+
+      @include respond(l-phone) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &__sub {
+    &__title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      line-height: 18px;
+    }
+
+    &__sub {
+      margin-top: 1.5%;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.feedback {
+  &__title {
+    font-size: 4.4rem;
+    color: $color-white;
+    text-align: center;
+    font-weight: bold;
+
+    @include respond(tab-land) {
+      font-size: 3.4rem;
+    }
+
+    @include respond(l-phone) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.infographics {
+  &__date {
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    /* line-height: 138.99%; */
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.01em;
+  }
+}
+
+.popup {
+  &__title {
+    font-size: 3.2rem;
+    margin-bottom: 4%;
+
+    &--2 {
+      font-size: 2rem;
+      font-weight: normal;
+      margin-bottom: 3%;
+    }
+
+    @include respond(tab-land) {
+      font-size: 4.2rem;
+    }
+
+    @include respond(l-phone) {
+      font-size: 2rem;
+    }
+  }
+
+  &__sub {
+    font-size: 1.6rem;
+    margin-bottom: 8%;
+
+    @include respond(tab-land) {
+      font-size: 2.6rem;
+    }
+
+    @include respond(l-phone) {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.budget {
+  &__title {
+    font-size: 2.2rem;
+
+    @include respond(l-phone) {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.footer {
+  &__text {
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+
+    @include respond(l-phone) {
+      font-size: 1.2rem;
+    }
+  }
+}

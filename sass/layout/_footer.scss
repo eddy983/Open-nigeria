@@ -1,0 +1,13 @@
+.footer {
+  background: #04081b;
+  padding: 2% 0;
+
+  &__report {
+    margin-top: 5%;
+  }
+
+  @include respond(l-phone) {
+    padding: 8% 0;
+    font-size: 1.2rem;
+  }
+}

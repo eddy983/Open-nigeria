@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Open Nigeria</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="assets/css/main.min.css" />
+  <link rel="stylesheet" href="assets/css/fonts.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+
+<body>
+  <nav class="nav-bar">
+    <a href="home.html">
+      <img src="assets/img/Logo.svg" alt="Logo" />
+    </a>
+    <div class="nav-bar__items">
+      <ul class="nav-bar__links">
+        <li class="nav-bar__link">
+          <a href="home.html" class="nav-bar__link__link">HOME</a>
+        </li>
+        <li class="nav-bar__link">
+          <a href="infographics.html" class="nav-bar__link__link">INFOGRAHPICS</a>
+        </li>
+        <li class="nav-bar__link">
+          <a href="interactive.html" class="nav-bar__link__link">INTERACTIVE</a>
+        </li>
+        <li class="nav-bar__link">
+          <a href="reports.html" class="nav-bar__link__link">REPORTS</a>
+        </li>
+      </ul>
+      <div class="nav-bar__line"></div>
+      <a href="#"><img src="assets/img/search.svg" alt="Search" /></a>
+    </div>
+  </nav>
+
+  <header class="header header__report header__report--int-BG">
+    <h1 class="header__text">INTERACTIVE</h1>
+  </header>
+  <div class="filter">
+    <div class="filter__selects">
+      <div class="filter__select">
+        <button class="filter__btn" onclick="myFunction()">
+          State
+        </button>
+        <div class="filter__select-content" id="myDropdown">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="filter__select">
+        <button class="filter__btn filter__btn2" onclick="myFunction2()">
+          L.G.A
+        </button>
+        <div class="filter__select-content" id="myDropdown2">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn btn__search">Search</button>
+  </div>
+
+  <section class="chart">
+    <h1 hidden>Charts</h1>
+
+    <div class=" chart__card">
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <div class=" chart__card">
+      <canvas id="myChart2"></canvas>
+    </div>
+
+
+  </section>
+
+  <footer class="footer">
+    <p class="footer__text">POWERED BY © BUDGIT NIGERIA</p>
+  </footer>
+</body>
+
+<script>
+  var ctx = document.getElementById('myChart');
+  var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(153, 102, 255, 0.2)',
+          'rgba(255, 159, 64, 0.2)'
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)'
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: true
+          }
+        }]
+      }
+    }
+  });
+</script>
+<script>
+  var ctx = document.getElementById('myChart2');
+  var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(153, 102, 255, 0.2)',
+          'rgba(255, 159, 64, 0.2)'
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)'
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: true
+          }
+        }]
+      }
+    }
+  });
+</script>
+
+
+
+
+</html>

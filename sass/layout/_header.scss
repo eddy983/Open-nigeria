@@ -1,0 +1,82 @@
+.header {
+  position: relative;
+  height: 60vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../assets/img/banner-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include respond(tab-land) {
+    height: 32vh;
+  }
+
+  &__report {
+    height: 40vh;
+
+    @include respond(tab-land) {
+      height: 20vh;
+    }
+
+    &--info-BG {
+      background: linear-gradient(180deg, rgba(38, 84, 42, 0.9) -8.68%, rgba(160, 212, 164, 0.27) 111.63%), url(../../assets/img/info-BG.png);
+    }
+
+    &--pro-BG {
+      background: linear-gradient(180deg, rgba(38, 84, 42, 0.9) -8.68%, rgba(160, 212, 164, 0.27) 111.63%), url(../../assets/img/Proposed-BG.png);
+    }
+
+    &--app-BG {
+      background: linear-gradient(180deg, rgba(38, 84, 42, 0.9) -8.68%, rgba(160, 212, 164, 0.27) 111.63%), url(../../assets/img/Approved-BG.png);
+    }
+
+    &--cit-BG {
+      background: linear-gradient(180deg, rgba(38, 84, 42, 0.9) -8.68%, rgba(160, 212, 164, 0.27) 111.63%), url(../../assets/img/Citizen-BG.png);
+    }
+
+    &--imp-BG {
+      background: linear-gradient(180deg, rgba(38, 84, 42, 0.9) -8.68%, rgba(160, 212, 164, 0.27) 111.63%), url(../../assets/img/Implementation-BG.png);
+    }
+
+    &--aud-BG {
+      background: linear-gradient(180deg, rgba(38, 84, 42, 0.9) -8.68%, rgba(160, 212, 164, 0.27) 111.63%), url(../../assets/img/Audited-BG.png);
+    }
+
+    &--pol-BG {
+      background: linear-gradient(180deg, rgba(38, 84, 42, 0.9) -8.68%, rgba(160, 212, 164, 0.27) 111.63%), url(../../assets/img/Policy-BG.png);
+    }
+
+    &--int-BG {
+      background: linear-gradient(180deg, rgba(38, 84, 42, 0.9) -8.68%, rgba(160, 212, 164, 0.27) 111.63%), url(../../assets/img/Interactive-BG.png);
+    }
+  }
+
+  &__text {
+    @include position;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 4rem;
+    color: $color-white;
+    width: 100%;
+    text-align: center;
+
+    @include respond(tab-land) {
+      font-size: 2.5rem;
+    }
+
+    @include respond(tab-port3) {
+      font-size: 2rem;
+    }
+
+    @include respond(l-phone) {
+      font-size: 1.6rem;
+    }
+
+    @include respond(m-phone2) {
+      font-size: 1.4rem;
+    }
+
+    @include respond(m-phone3) {
+      font-size: 1.6rem;
+    }
+  }
+}

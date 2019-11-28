@@ -1,0 +1,111 @@
+.news {
+  @include gen-section;
+  margin-top: 6%;
+  padding: 8% $gen-padding;
+  background: white;
+
+  &__items {
+    display: flex;
+    margin: 0 -1.5%;
+
+    @include respond(tab-land2) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    flex: 1 1 50%;
+    padding: 0 1.5%;
+
+    &__main {
+      position: relative;
+      height: 100%;
+
+      @include respond(tab-land2) {
+        margin-bottom: 3%;
+      }
+
+      @include respond(l-phone) {
+        margin-bottom: 6%;
+      }
+
+      
+    }
+
+    &__subs {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -1.5% -3%;
+
+      @include respond(l-phone) {
+        flex-direction: column;
+      }
+    }
+
+    &__sub {
+      flex: 1 1 50%;
+      padding: 0 1.5% 3%;
+
+      @include respond(l-phone) {
+        padding: 0 1.5% 6%;
+      }
+    }
+
+    &__small {
+      position: relative;
+      height: 100%;
+    }
+  }
+  &__img {
+    height: 100%;
+
+    &__img {
+      height: 100%;
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+  }
+
+  &__main {
+    @include position-bottom;
+    padding: 3.5rem;
+    background: rgba(66, 66, 66, 0.85);
+    border-radius: 8px;
+    width: 100%;
+
+    @include respond(l-phone) {
+      padding: 2.8rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;  
+    }
+
+    &:hover {
+      background: rgba(0, 135, 81, 0.8);
+      cursor: pointer;
+    }
+  }
+
+  &__overlay {
+    @include position-bottom;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background: linear-gradient(
+      0deg,
+      #424242 0%,
+      rgba(255, 255, 255, 0) 193.74%
+    );
+
+    &:hover {
+      background: linear-gradient(0deg, rgba(0, 135, 81, 0.81), rgba(0, 135, 81, 0.81));
+    }
+  }
+
+  &__sub {
+    @include news-padding;
+    @include position-bottom;
+  }
+}

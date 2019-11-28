@@ -1,0 +1,12 @@
+.chart {
+  padding: 8% $gen-padding;
+
+  &__card {
+    padding: 3% 6%;
+    background: $color-white;
+
+    &:not(:last-child) {
+      margin-bottom: 4%;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.btn {
+  color: $color-white;
+  border: none;
+  background: $color-primary;
+  font-family: "helvetica", sans-serif;
+  font-weight: bold;
+  outline: 0;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 8px;
+
+  &:hover {
+    background: $color-green;
+    // background: #00613A;
+  }
+
+  &__report {
+    width: 100%;
+    padding: 7% 0;
+    border-radius: 0px 0px 12px 12px;
+    font-size: 2.4rem;
+  }
+
+  &__feedback {
+    padding: 1.8rem 7.6rem;
+    background: #c6dbc7;
+    color: $color-black;
+    font-weight: normal;
+    font-size: 1.8rem;
+    display: block;
+    margin-top: 2.5%;
+
+    @include respond(l-phone) {
+      margin-top: 10%;
+      font-size: 1.2rem;
+    }
+  }
+
+  &__send {
+    width: 60%;
+    padding: 1.8rem 0;
+    margin: 0 auto;
+    display: block;
+    font-size: 2.8rem;
+
+    @include respond(l-phone) {
+      width: 100%;
+      font-size: 1.6rem;
+      padding: 1.4rem 0;
+    }
+  }
+
+  &__search {
+    width: 25%;
+    font-size: 2.2rem;
+    border-radius: 12px;
+
+    @include respond(l-phone) {
+      padding: 1.4rem 0;
+      width: 100%;
+    }
+  }
+}
