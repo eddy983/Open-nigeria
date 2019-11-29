@@ -5,6 +5,10 @@
   padding: 1.6% $gen-padding;
   justify-content: space-between;
 
+  @include respond(big-desktop-min) {
+    padding: 1.6% $gen-padding-large;
+  }
+
   @include respond(l-phone) {
     padding: 6% $gen-padding-small;
     flex-direction: column;

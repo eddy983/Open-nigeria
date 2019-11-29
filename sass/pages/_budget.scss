@@ -1,6 +1,10 @@
 .budget {
   padding: 8% $gen-padding;
 
+  @include respond(big-desktop-min) {
+    padding: 8% $gen-padding-large;
+  }
+
   @include respond(tab-land2) {
     padding: 8% $gen-padding 34%;
   }

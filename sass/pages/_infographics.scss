@@ -3,6 +3,10 @@
 
   padding: 0 $gen-padding;
 
+  @include respond(big-desktop-min) {
+    padding: 0 $gen-padding-large;
+  }
+
   @include respond(l-phone) {
     padding: 0 $gen-padding-small;
   }

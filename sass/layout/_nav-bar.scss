@@ -3,12 +3,17 @@
   justify-content: space-between;
   align-items: center;
   background-color: $color-white;
-  padding: 2.4rem 10%;
+  padding: 2.4rem $gen-padding;
   position: relative;
+
+  @include respond(big-desktop-min) {
+    padding: 3.4rem $gen-padding-large;
+  }
 
   @include respond(tab-port3) {
     flex-direction: column;
   }
+
 
   &__main {
     width: 100%;

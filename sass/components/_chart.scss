@@ -1,6 +1,10 @@
 .chart {
   padding: 8% $gen-padding;
 
+  @include respond(big-desktop-min) {
+    padding: 8% $gen-padding-large;
+  }
+
   @include respond(l-phone) {
     padding: 8% $gen-padding-small;
   }

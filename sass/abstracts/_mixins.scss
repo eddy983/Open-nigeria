@@ -148,8 +148,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
       @content;
     } // 1440px in em
   }
-  @if $breakpoint == big-desktop2 {
-    @media (max-width: 138.5625em) {
+  @if $breakpoint == big-desktop-min {
+    @media (min-width: 138.5625em) {
       @content;
     } // 2217px in em
   }
