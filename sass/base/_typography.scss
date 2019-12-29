@@ -3,6 +3,10 @@ body {
   font-weight: normal;
   font-style: normal;
   color: $color-black;
+  letter-spacing: 0.02em;
+  font-size: 1.6rem;
+  font-feature-settings: "ss02" on, "ss04" on;
+  line-height: 1.7;
 }
 
 h1 {

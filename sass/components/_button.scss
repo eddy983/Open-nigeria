@@ -14,6 +14,87 @@
     // background: #00613A;
   }
 
+  &__map {
+    font-size: 1.4rem;
+    letter-spacing: 0.04em;
+    color: $color-blue-dark;
+    display: flex;
+    align-items: center;
+    padding: 1.4rem 2rem;
+    justify-content: space-between;
+    border: 1px solid $color-blue-dark;
+    background: $color-white;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-transform: capitalize;
+
+    &:hover {
+      background: $color-white;
+    }
+
+    @include respond(big-desktop) {
+      font-size: 2rem;
+    }
+
+    @include respond(desktop-min) {
+      font-size: 1.6rem;
+    }
+
+    @include respond(tab-port3) {
+      line-height: 1.7;
+    }
+
+    &__img {
+      @include respond(big-desktop) {
+        height: 2.4rem;
+      }
+    }
+
+    &--1 {
+      width: 9%;
+      border-radius: 0 8px 8px 0;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        transform: scaleX(1.03) translateX(1.5%);
+        cursor: pointer;
+      }
+
+      @include respond(big-desktop) {
+        width: 8%;
+      }
+
+      @include respond(desktop-min) {
+        width: 12%;
+      }
+
+      @include respond(tab-land2) {
+        width: 15%;
+      }
+    }
+  }
+
+  &__close {
+    background: #000;
+    color: $color-white;
+    font-size: 3rem;
+    border: none;
+    font-weight: lighter;
+    padding: 0.1rem 0.8rem;
+    position: absolute;
+    top: 0;
+    border-radius: 0;
+    line-height: 1.2;
+
+    &:hover {
+      background: $color-green-darker;
+    }
+
+    @include respond(l-phone) {
+      display: none;
+    }
+  }
+
   &__report {
     width: 100%;
     padding: 7% 0;
