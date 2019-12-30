@@ -23,16 +23,16 @@
 
   &__content {
     width: 50%;
-    background-color: $color-white;
     box-shadow: 0 2rem 4rem rgba($shadow-black, 0.25);
     @include position;
     border-radius: 8px;
     overflow: hidden;
     opacity: 0;
     padding: 3%;
-    background: #f5fffb;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.5s 0.2s;
+    // background: adjust-hue( saturate(lighten($color-primary, 68%), 10%), -10% );
+    background: adjust-hue( lighten($color-primary, 38%), -10% );
 
     &--2 {
       padding: 2%;

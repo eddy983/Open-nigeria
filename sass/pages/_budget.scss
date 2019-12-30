@@ -49,7 +49,9 @@
     circle {
       transition: all 0.1s;
       &:hover {
-        fill: $color-green;
+        // fill: $color-green;
+        
+        fill: adjust-hue( saturate(lighten($color-primary, 7%), 6%), -20% );
       }
     }
   }

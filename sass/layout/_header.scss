@@ -18,35 +18,23 @@
     }
 
     &--info-BG {
-      background: linear-gradient(180deg, rgba(38, 84, 42, 0.9) -8.68%, rgba(160, 212, 164, 0.27) 111.63%), url(../../assets/img/info-BG.png);
+      // background: linear-gradient(180deg, rgba(38, 84, 42, 0.9) -8.68%, rgba(160, 212, 164, 0.27) 111.63%), url(../../assets/img/info-BG.png);
+      background: linear-gradient(180deg, rgba(darken($color-primary, 25%), 0.68) -8.68%, rgba($color-primary, 0.2) 111.63%), url(../../assets/img/infographics-pattern.png), adjust-hue( saturate(lighten($color-primary, 16%), 18%), -10% );
     }
 
-    &--pro-BG {
-      background: linear-gradient(180deg, rgba(38, 84, 42, 0.9) -8.68%, rgba(160, 212, 164, 0.27) 111.63%), url(../../assets/img/Proposed-BG.png);
-    }
-
-    &--app-BG {
-      background: linear-gradient(180deg, rgba(38, 84, 42, 0.9) -8.68%, rgba(160, 212, 164, 0.27) 111.63%), url(../../assets/img/Approved-BG.png);
-    }
-
-    &--cit-BG {
-      background: linear-gradient(180deg, rgba(38, 84, 42, 0.9) -8.68%, rgba(160, 212, 164, 0.27) 111.63%), url(../../assets/img/Citizen-BG.png);
-    }
-
-    &--imp-BG {
-      background: linear-gradient(180deg, rgba(38, 84, 42, 0.9) -8.68%, rgba(160, 212, 164, 0.27) 111.63%), url(../../assets/img/Implementation-BG.png);
-    }
-
-    &--aud-BG {
-      background: linear-gradient(180deg, rgba(38, 84, 42, 0.9) -8.68%, rgba(160, 212, 164, 0.27) 111.63%), url(../../assets/img/Audited-BG.png);
-    }
-
-    &--pol-BG {
-      background: linear-gradient(180deg, rgba(38, 84, 42, 0.9) -8.68%, rgba(160, 212, 164, 0.27) 111.63%), url(../../assets/img/Policy-BG.png);
+    &--doc-BG {
+      // background: linear-gradient(180deg, rgba(38, 84, 42, 0.9) -8.68%, rgba(160, 212, 164, 0.27) 111.63%), url(../../assets/img/Proposed-BG.png);
+      background: linear-gradient(180deg, rgba(darken($color-primary, 25%), 0.68) -8.68%, rgba($color-primary, 0.2) 111.63%), url(../../assets/img/documents-pattern.png), adjust-hue( saturate(lighten($color-primary, 16%), 18%), -10% );
     }
 
     &--int-BG {
-      background: linear-gradient(180deg, rgba(38, 84, 42, 0.9) -8.68%, rgba(160, 212, 164, 0.27) 111.63%), url(../../assets/img/Interactive-BG.png);
+      // background: linear-gradient(180deg, rgba(38, 84, 42, 0.9) -8.68%, rgba(160, 212, 164, 0.27) 111.63%), url(../../assets/img/Interactive-BG.png);
+      background: linear-gradient(180deg, rgba(darken($color-primary, 25%), 0.68) -8.68%, rgba($color-primary, 0.2) 111.63%), url(../../assets/img/interactive-pattern.png), adjust-hue( saturate(lighten($color-primary, 16%), 18%), -10% );
+    }
+
+    &--rep-BG {
+      // background: linear-gradient(180deg, rgba(38, 84, 42, 0.9) -8.68%, rgba(160, 212, 164, 0.27) 111.63%), url(../../assets/img/Policy-BG.png);
+      background: linear-gradient(180deg, rgba(darken($color-primary, 25%), 0.68) -8.68%, rgba($color-primary, 0.2) 111.63%), url(../../assets/img/reports-pattern.png), adjust-hue( saturate(lighten($color-primary, 16%), 18%), -10% );
     }
   }
 

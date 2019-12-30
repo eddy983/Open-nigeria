@@ -10,8 +10,10 @@
   border-radius: 8px;
 
   &:hover {
-    background: $color-green;
-    // background: #00613A;
+    background: adjust-hue( saturate(lighten($color-primary, 7%), 6%), -20% );
+
+    //? Real Color
+    // background: $color-green;
   }
 
   &__map {
@@ -104,12 +106,14 @@
 
   &__feedback {
     padding: 1.8rem 7.6rem;
-    background: #c6dbc7;
     color: $color-black;
     font-weight: normal;
     font-size: 1.8rem;
     display: block;
     margin-top: 2.5%;
+    background: adjust-hue( desaturate(lighten($color-primary, 60%), 80%), -15% );
+    
+
 
     @include respond(l-phone) {
       margin-top: 10%;
