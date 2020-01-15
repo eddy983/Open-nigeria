@@ -32,7 +32,8 @@
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.5s 0.2s;
     // background: adjust-hue( saturate(lighten($color-primary, 68%), 10%), -10% );
-    background: adjust-hue( lighten($color-primary, 38%), -10% );
+    // background: adjust-hue( lighten($color-primary, 38%), -10% );
+    background: var(--main-color-lighter);
 
     &--2 {
       padding: 2%;
@@ -110,7 +111,8 @@
     }
 
     &:hover {
-      color: $color-primary;
+      // color: $color-primary;
+      color: var(--main-color);
     }
   }
 

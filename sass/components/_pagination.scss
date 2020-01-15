@@ -39,6 +39,7 @@
     &:hover,
     &::selection {
       background-color: $color-primary;
+      background-color: var(--main-color);
       color: $color-white;
       border-radius: 8px;
     }

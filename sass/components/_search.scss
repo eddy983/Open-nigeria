@@ -43,7 +43,8 @@
     background: currentColor;
 
     &:hover {
-      background: $color-primary;
+      // background: $color-primary;
+      background:  var(--main-color);
     }
   }
 

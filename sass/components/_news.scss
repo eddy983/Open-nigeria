@@ -87,7 +87,8 @@
     }
 
     &:hover {
-      background: rgba($color-primary, 0.8);
+      // background: rgba($color-primary, 0.81);
+      background: var(--main-color-80);
       cursor: pointer;
     }
   }
@@ -104,7 +105,7 @@
     );
 
     &:hover {
-      background: linear-gradient(0deg, rgba($color-primary, 0.81), rgba($color-primary, 0.81));
+      background: linear-gradient(0deg, var(--main-color-80), var(--main-color-80));
       // background: linear-gradient(0deg, rgba(0, 135, 81, 0.81), rgba(0, 135, 81, 0.81));
     }
   }

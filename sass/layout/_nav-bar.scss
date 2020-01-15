@@ -77,7 +77,8 @@
       }
 
       &:hover {
-        color: adjust-hue( saturate(lighten($color-primary, 8%), 6%), -65% );
+        // color: adjust-hue( saturate(lighten($color-primary, 8%), 6%), -65% );
+        color: var(--main-color-light);
 
         //? Real color
         // color: $color-green;

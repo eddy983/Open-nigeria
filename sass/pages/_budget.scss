@@ -1,5 +1,6 @@
 .budget {
   padding: 8% $gen-padding;
+  min-height: 56vh;
 
   @include respond(big-desktop-min) {
     padding: 8% $gen-padding-large;
@@ -7,6 +8,7 @@
 
   @include respond(tab-land2) {
     padding: 8% $gen-padding 34%;
+    min-height: 70vh;
   }
 
   @include respond(tab-port3) {
@@ -15,7 +17,9 @@
 
   @include respond(l-phone) {
     padding: 8% $gen-padding-small 8%;
+    min-height: 62vh;
   }
+
 
   
 
@@ -50,8 +54,9 @@
       transition: all 0.1s;
       &:hover {
         // fill: $color-green;
-        
-        fill: adjust-hue( saturate(lighten($color-primary, 7%), 6%), -20% );
+        // fill: adjust-hue( saturate(lighten($color-primary, 7%), 6%), -20% );
+
+        fill: var(--main-color-light);
       }
     }
   }

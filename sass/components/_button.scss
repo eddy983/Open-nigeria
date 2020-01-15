@@ -1,7 +1,8 @@
 .btn {
   color: $color-white;
   border: none;
-  background: $color-primary;
+  background: var(--main-color);
+  // background: $color-primary;
   font-family: "helvetica", sans-serif;
   font-weight: bold;
   outline: 0;
@@ -10,7 +11,9 @@
   border-radius: 8px;
 
   &:hover {
-    background: adjust-hue( saturate(lighten($color-primary, 7%), 6%), -20% );
+    // background: adjust-hue( saturate(lighten($color-primary, 7%), 6%), -20% );
+    background: var(--main-color-light);
+    // filter: brightness(85%);
 
     //? Real Color
     // background: $color-green;

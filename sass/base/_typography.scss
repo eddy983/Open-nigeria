@@ -1,18 +1,12 @@
 body {
-  font-family: "helvetica", sans-serif;
-  font-weight: normal;
-  font-style: normal;
   color: $color-black;
   letter-spacing: 0.02em;
-  font-size: 1.6rem;
   font-feature-settings: "ss02" on, "ss04" on;
-  line-height: 1.7;
+  font: normal normal 1.6rem/1.7 "helvetica", sans-serif;
 }
 
 h1 {
-  font-family: "avenir", sans-serif;
-  font-weight: normal;
-  font-style: normal;
+  font: normal normal "avenir", sans-serif;
 }
 
 .report {

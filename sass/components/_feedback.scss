@@ -1,6 +1,6 @@
 .feedback {
   padding: 5% $gen-padding;
-  background: url(../../assets/img/feedback-pattern.png), $color-primary;
+  background: url(../../assets/img/feedback-pattern.png), var(--main-color);
   background-size: cover;
   display: flex;
   flex-direction: column;
