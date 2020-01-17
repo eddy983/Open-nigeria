@@ -33,3 +33,11 @@
 .fill {
   fill: var(--main-color);
 }
+
+.fill__empty {
+  fill: var(--main-color-60);
+}
+
+.fill__shadow {
+  fill: var(--main-color-10);
+}

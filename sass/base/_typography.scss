@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-  font: normal normal "avenir", sans-serif;
+  font: normal normal 4rem "avenir", sans-serif;
 }
 
 .report {
@@ -137,6 +137,30 @@ h1 {
     @include respond(l-phone) {
       font-size: 1.8rem;
     }
+  }
+}
+
+.lga {
+  color: $color-white;
+  font-size: 4rem;
+}
+
+.empty__title {
+  font-size: 4rem;
+  margin-top: 3%;
+  color: var(--main-color-60);
+
+  @include respond(l-phone) {
+    font-size: 2.6rem;
+  }
+
+  @include respond(m-phone4) {
+    font-size: 2.3rem;
+  }
+
+  @include respond(sx-phone) {
+    margin-top: -14%;
+    font-size: 2rem;
   }
 }
 

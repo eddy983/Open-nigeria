@@ -8,11 +8,15 @@
   outline: 0;
   cursor: pointer;
   text-decoration: none;
-  border-radius: 8px;
+  // border-radius: 8px;
+
+  //! To be removed later
+  border-radius: 100px;
 
   &:hover {
     // background: adjust-hue( saturate(lighten($color-primary, 7%), 6%), -20% );
     background: var(--main-color-light);
+    background: var(--main-color-lower);
     // filter: brightness(85%);
 
     //? Real Color
@@ -105,6 +109,9 @@
     padding: 7% 0;
     border-radius: 0px 0px 12px 12px;
     font-size: 2.4rem;
+
+    //! Remove if not liked
+    border-radius: 0px 0px 28px 28px;
   }
 
   &__feedback {
@@ -115,6 +122,11 @@
     display: block;
     margin-top: 2.5%;
     background: adjust-hue( desaturate(lighten($color-primary, 60%), 80%), -15% );
+
+    &:hover {
+      background: var(--main-color-lower);
+      color: $color-white;
+    }
     
 
 
@@ -122,6 +134,15 @@
       margin-top: 10%;
       font-size: 1.2rem;
     }
+  }
+
+  &__view {
+    @extend .btn__feedback;
+
+    &:hover {
+      background: var(--main-color-light);
+    }
+
   }
 
   &__send {
@@ -141,7 +162,9 @@
   &__search {
     width: 25%;
     font-size: 2.2rem;
-    border-radius: 12px;
+
+    //! Uncomment if idea not approved
+    // border-radius: 12px;
 
     @include respond(l-phone) {
       padding: 1.4rem 0;

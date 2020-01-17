@@ -12,6 +12,7 @@
   &__card {
     padding: 3% 6%;
     background: $color-white;
+    border-radius: 12px;
 
     &:not(:last-child) {
       margin-bottom: 4%;

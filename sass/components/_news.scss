@@ -1,6 +1,4 @@
 .news {
-  @include gen-section;
-  margin-top: 6%;
   padding: 8% $gen-padding;
   background: white;
 
@@ -32,8 +30,6 @@
       @include respond(l-phone) {
         margin-bottom: 6%;
       }
-
-      
     }
 
     &__subs {
@@ -68,6 +64,9 @@
       width: 100%;
       border-radius: 8px;
       object-fit: cover;
+
+      //! Remove if not liked
+      border-radius: 20px;
     }
   }
 
@@ -78,12 +77,15 @@
     border-radius: 8px;
     width: 100%;
 
+    //! Remove if not liked
+    border-radius: 20px;
+
     @include respond(l-phone) {
       padding: 2.8rem;
       height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;  
+      justify-content: flex-end;
     }
 
     &:hover {
@@ -104,8 +106,15 @@
       rgba(255, 255, 255, 0) 193.74%
     );
 
+    //! Remove if not liked
+    border-radius: 20px;
+
     &:hover {
-      background: linear-gradient(0deg, var(--main-color-80), var(--main-color-80));
+      background: linear-gradient(
+        0deg,
+        var(--main-color-80),
+        var(--main-color-80)
+      );
       // background: linear-gradient(0deg, rgba(0, 135, 81, 0.81), rgba(0, 135, 81, 0.81));
     }
   }

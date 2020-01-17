@@ -71,6 +71,7 @@ a {
   --main-color-90: hsla(var(--main-color-hsl), .9);
 
   --main-color-warm: hsl(calc(var(--main-color-h) + 80), var(--main-color-s), var(--main-color-l));
+  --main-color-warmer: hsl(calc(var(--main-color-h) + 80), calc(var(--main-color-s) / 4), var(--main-color-l));
   --main-color-cold: hsl(calc(var(--main-color-h) - 80), var(--main-color-s), var(--main-color-l));
 
   --main-color-low: hsl(var(--main-color-h), calc(var(--main-color-s) / 2), var(--main-color-l));

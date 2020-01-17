@@ -90,32 +90,6 @@
   <header class="header header__report header__report--info-BG">
     <h1 class="header__text">TELLING STORIES USING DATA</h1>
   </header>
-  <div class="filter">
-    <div class="filter__selects">
-      <div class="filter__select">
-        <button class="filter__btn" onclick="myFunction()">
-          State
-        </button>
-        <div class="filter__select-content" id="myDropdown">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-      </div>
-      <div class="filter__select">
-        <button class="filter__btn filter__btn2" onclick="myFunction2()">
-          L.G.A
-        </button>
-        <div class="filter__select-content" id="myDropdown2">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-      </div>
-    </div>
-
-    <button class="btn btn__search">Search</button>
-  </div>
 
   <section class="infographics">
     <h1 hidden>Infographics</h1>
@@ -245,39 +219,5 @@
     </div>
   </div>
 </body>
-<script>
-  /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function (e) {
-    if (!e.target.matches(".filter__btn")) {
-      var myDropdown = document.getElementById("myDropdown");
-      if (myDropdown.classList.contains("show")) {
-        myDropdown.classList.remove("show");
-      }
-    }
-  };
-</script>
-<script>
-  /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-  function myFunction2() {
-    document.getElementById("myDropdown2").classList.toggle("show");
-  }
-
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function (e) {
-    if (!e.target.matches(".filter__btn2")) {
-      var myDropdown = document.getElementById("myDropdown2");
-      if (myDropdown.classList.contains("show")) {
-        myDropdown.classList.remove("show");
-      }
-    }
-  };
-</script>
 
 </html>

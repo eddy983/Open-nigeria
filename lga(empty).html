@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Open Nigeria</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="assets/css/main.min.css" />
+  <link rel="stylesheet" href="assets/css/fonts.css" />
+
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- <style>
+    :root {
+      --main-color-h: 739;
+      --main-color-s: 76%;
+      --main-color-l: 42%;
+    }
+  </style> -->
+</head>
+
+<body>
+  <nav class="nav-bar" id="nav">
+    <div class="nav-bar__main">
+      <a href="home.html">
+        <img src="assets/img/Logo.svg" alt="Logo" />
+      </a>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon nav-bar__menu" onclick="myMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="nav-bar__items" id="myLinks">
+      <ul class="nav-bar__links">
+        <a href="home.html" class="nav-bar__link__link">
+          <li class="nav-bar__link">
+            HOME
+          </li>
+        </a>
+        <a href="infographics.html" class="nav-bar__link__link">
+          <li class="nav-bar__link">
+            INFOGRAHPICS
+          </li>
+        </a>
+        <a href="interactive.html" class="nav-bar__link__link">
+          <li class="nav-bar__link">
+            INTERACTIVE
+          </li>
+        </a>
+        <a href="reports.html" class="nav-bar__link__link">
+          <li class="nav-bar__link">
+            REPORTS
+          </li>
+        </a>
+      </ul>
+      <div class="nav-bar__line"></div>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+        class="nav-bar__search">
+        <a href="#search">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M14.6588 13.9519L14.38 13.683C15.3557 12.548 15.9431 11.0745 15.9431 9.47155C15.9431 5.89726 13.0458 3 9.47155 3C5.89726 3 3 5.89726 3 9.47155C3 13.0458 5.89726 15.9431 9.47155 15.9431C11.0745 15.9431 12.548 15.3557 13.683 14.38L13.9519 14.6588V15.4453L18.2229 19.7078C18.6135 20.0976 19.2461 20.0973 19.6364 19.7071L19.7071 19.6364C20.0973 19.2461 20.0976 18.6135 19.7078 18.2229L15.4453 13.9519H14.6588ZM4.99129 9.47178C4.99129 6.99267 6.99249 4.99147 9.47159 4.99147C11.9507 4.99147 13.9519 6.99267 13.9519 9.47178C13.9519 11.9509 11.9507 13.9521 9.47159 13.9521C6.99249 13.9521 4.99129 11.9509 4.99129 9.47178Z"
+            fill="#C2D1D9" />
+          <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="17" height="17">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M14.6588 13.9519L14.38 13.683C15.3557 12.548 15.9431 11.0745 15.9431 9.47155C15.9431 5.89726 13.0458 3 9.47155 3C5.89726 3 3 5.89726 3 9.47155C3 13.0458 5.89726 15.9431 9.47155 15.9431C11.0745 15.9431 12.548 15.3557 13.683 14.38L13.9519 14.6588V15.4453L18.2229 19.7078C18.6135 20.0976 19.2461 20.0973 19.6364 19.7071L19.7071 19.6364C20.0973 19.2461 20.0976 18.6135 19.7078 18.2229L15.4453 13.9519H14.6588ZM4.99129 9.47178C4.99129 6.99267 6.99249 4.99147 9.47159 4.99147C11.9507 4.99147 13.9519 6.99267 13.9519 9.47178C13.9519 11.9509 11.9507 13.9521 9.47159 13.9521C6.99249 13.9521 4.99129 11.9509 4.99129 9.47178Z"
+              fill="white" />
+          </mask>
+          <g mask="url(#mask0)">
+            <rect width="24" height="24" class="fill" />
+          </g>
+        </a>
+      </svg>
+    </div>
+
+    <div class="search" id="search">
+      <input class="search__input" type="text"
+        placeholder="SEARCH FOR DOCUMENT (e.g KADUNA STATE PROPOSED BUDGET 2019 ">
+      <div class="search__btn">
+        <a href="#nav" class="search__link">
+          <p class="search__close">&otimes;</p>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header header__report header__report--doc-BG">
+    <h1 class="header__text">Local Government Budgets</h1>
+  </header>
+  <div class="filter">
+    <div class="filter__selects">
+      <div class="filter__select">
+        <button class="filter__btn" onclick="myFunction()">
+          L.G.A
+        </button>
+        <div class="filter__select-content" id="myDropdown">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="filter__select">
+        <button class="filter__btn filter__btn2" onclick="myFunction2()">
+          Type
+        </button>
+        <div class="filter__select-content" id="myDropdown2">
+          <a href="#">All</a>
+          <a href="#">Capital</a>
+          <a href="#">Recurrent</a>
+          <a href="#">Revenue</a>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn btn__search">Search</button>
+  </div>
+
+  <section class="empty">
+    <h1 hidden>Local Government Budgets</h1>
+
+    <svg width="110" height="214" viewBox="0 0 110 214" fill="none" xmlns="http://www.w3.org/2000/svg" class="empty__svg">
+      <path
+        d="M89.6698 186.642C88.6845 188.059 88.1447 189.74 88.1178 191.467V201.411C88.1178 206.046 84.3607 209.803 79.7258 209.803H67.1387C71.7717 209.803 75.5307 206.046 75.5307 201.411V191.467C75.5557 189.74 76.0974 188.059 77.0827 186.642C93.8246 162.472 92.3148 142.667 92.3148 142.667V90.215C92.3186 87.4317 91.218 84.7599 89.2511 82.7891C88.9015 82.4337 88.5231 82.111 88.1178 81.8229C91.2968 79.4392 95.5495 79.055 99.103 80.8337C102.658 82.6105 104.902 86.2427 104.902 90.215V142.667C104.902 142.667 106.414 162.472 89.6698 186.642Z"
+        class="fill__shadow" />
+      <path
+        d="M109.107 90.215C109.107 82.1053 102.532 75.5284 94.42 75.5284C91.9498 75.5476 89.5257 76.193 87.3763 77.4089C86.1028 73.2004 82.9853 69.7986 78.9036 68.1659C74.8219 66.5332 70.2177 66.8463 66.3952 69.0168C65.1582 64.9639 62.2098 61.6543 58.3259 59.9621C54.4401 58.2699 50.0088 58.3621 46.1998 60.2176V14.6866C46.1998 6.57495 39.6248 0 31.5132 0C23.4016 0 16.8267 6.57495 16.8267 14.6866V100.706C7.55682 100.706 0.0425935 108.221 0.0425935 117.491V161.548C-0.466422 170.828 3.61147 179.767 10.9528 185.466C12.0093 186.26 12.6297 187.502 12.6297 188.824V201.411C12.6297 208.364 18.2673 214 25.2187 214H79.768C86.7194 214 92.357 208.364 92.357 201.411V191.459C92.3743 190.591 92.6528 189.748 93.1541 189.037C110.491 163.907 109.162 143.22 109.107 142.667V90.215ZM86.2181 184.272C84.741 186.379 83.9457 188.885 83.9342 191.459V201.411C83.9342 203.729 82.0557 205.608 79.7392 205.608H25.2187C22.9022 205.608 21.0217 203.729 21.0217 201.411V188.824C20.9949 184.771 19.0414 180.973 15.7606 178.594C10.6974 174.437 7.96596 168.083 8.43464 161.548V117.491C8.43464 112.856 12.1918 109.098 16.8267 109.098V151.059C16.8267 153.375 18.7052 155.256 21.0217 155.256C23.3402 155.256 25.2187 153.375 25.2187 151.059V14.6866C25.2187 11.2099 28.0366 8.39204 31.5132 8.39204C34.9899 8.39204 37.8078 11.2099 37.8078 14.6866V79.7254C37.8078 82.0419 39.6863 83.9204 42.0028 83.9204C44.3212 83.9204 46.1998 82.0419 46.1998 79.7254V73.4309C46.1998 69.9542 49.0176 67.1364 52.4924 67.1364C55.9691 67.1364 58.7869 69.9542 58.7869 73.4309V83.9204C58.7869 86.2389 60.6655 88.1174 62.9839 88.1174C65.3004 88.1174 67.1789 86.2389 67.1789 83.9204V81.8229C67.1789 78.3462 69.9968 75.5284 73.4735 75.5284C76.9501 75.5284 79.768 78.3462 79.768 81.8229V96.5095C79.768 98.8279 81.6465 100.706 83.963 100.706C86.2815 100.706 88.16 98.8279 88.16 96.5095V90.215C88.16 86.7402 90.9779 83.9204 94.4545 83.9204C97.9312 83.9204 100.749 86.7402 100.749 90.215V142.964C100.749 143.149 101.788 161.738 86.2181 184.272Z"
+        class="fill__empty" />
+      <path
+        d="M37.8081 188.824H33.6111C31.2946 188.824 29.416 190.702 29.416 193.019C29.416 195.337 31.2946 197.216 33.6111 197.216H37.8081C40.1246 197.216 42.0031 195.337 42.0031 193.019C42.0031 190.702 40.1246 188.824 37.8081 188.824Z"
+        class="fill__empty" />
+      <path
+        d="M71.3756 188.824H54.5915C52.2731 188.824 50.3945 190.702 50.3945 193.019C50.3945 195.337 52.2731 197.216 54.5915 197.216H71.3756C73.6921 197.216 75.5707 195.337 75.5707 193.019C75.5707 190.702 73.6921 188.824 71.3756 188.824Z"
+        class="fill__empty" />
+    </svg>
+    <h2 class="empty__title">Hi, Please start search above</h2>
+
+
+  </section>
+
+  <footer class="footer">
+    <p class="footer__text">POWERED BY © BUDGIT NIGERIA</p>
+  </footer>
+</body>
+
+<script src="assets//js/main.js"></script>
+
+</html>
