@@ -16,9 +16,9 @@
 
   <!-- <style>
     :root {
-      --main-color-h: 395;
-      --main-color-s: 46%;
-      --main-color-l: 58%;
+      --main-color-h: 739;
+      --main-color-s: 56%;
+      --main-color-l: 62%;
     }
   </style> -->
 </head>
@@ -51,29 +51,12 @@
             INTERACTIVE
           </li>
         </a>
-        <a href="reports.html" class="nav-bar__link__link">
+        <a href="capital-projects.html" class="nav-bar__link__link">
           <li class="nav-bar__link">
-            REPORTS
+            CAPITAL PROJECTS
           </li>
         </a>
       </ul>
-      <div class="nav-bar__line"></div>
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-        class="nav-bar__search">
-        <a href="#search">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M14.6588 13.9519L14.38 13.683C15.3557 12.548 15.9431 11.0745 15.9431 9.47155C15.9431 5.89726 13.0458 3 9.47155 3C5.89726 3 3 5.89726 3 9.47155C3 13.0458 5.89726 15.9431 9.47155 15.9431C11.0745 15.9431 12.548 15.3557 13.683 14.38L13.9519 14.6588V15.4453L18.2229 19.7078C18.6135 20.0976 19.2461 20.0973 19.6364 19.7071L19.7071 19.6364C20.0973 19.2461 20.0976 18.6135 19.7078 18.2229L15.4453 13.9519H14.6588ZM4.99129 9.47178C4.99129 6.99267 6.99249 4.99147 9.47159 4.99147C11.9507 4.99147 13.9519 6.99267 13.9519 9.47178C13.9519 11.9509 11.9507 13.9521 9.47159 13.9521C6.99249 13.9521 4.99129 11.9509 4.99129 9.47178Z"
-            fill="#C2D1D9" />
-          <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="17" height="17">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M14.6588 13.9519L14.38 13.683C15.3557 12.548 15.9431 11.0745 15.9431 9.47155C15.9431 5.89726 13.0458 3 9.47155 3C5.89726 3 3 5.89726 3 9.47155C3 13.0458 5.89726 15.9431 9.47155 15.9431C11.0745 15.9431 12.548 15.3557 13.683 14.38L13.9519 14.6588V15.4453L18.2229 19.7078C18.6135 20.0976 19.2461 20.0973 19.6364 19.7071L19.7071 19.6364C20.0973 19.2461 20.0976 18.6135 19.7078 18.2229L15.4453 13.9519H14.6588ZM4.99129 9.47178C4.99129 6.99267 6.99249 4.99147 9.47159 4.99147C11.9507 4.99147 13.9519 6.99267 13.9519 9.47178C13.9519 11.9509 11.9507 13.9521 9.47159 13.9521C6.99249 13.9521 4.99129 11.9509 4.99129 9.47178Z"
-              fill="white" />
-          </mask>
-          <g mask="url(#mask0)">
-            <rect width="24" height="24" class="fill" />
-          </g>
-        </a>
-      </svg>
     </div>
 
     <div class="search" id="search">
@@ -87,137 +70,109 @@
     </div>
   </nav>
 
-  <header class="header header__report header__report--info-BG">
-    <h1 class="header__text">TELLING STORIES USING DATA</h1>
+  <header class="header header__report header__report--doc-BG">
+    <h1 class="header__text">capital projects</h1>
   </header>
 
-  <section class="infographics">
-    <h1 hidden>Infographics</h1>
-
-    <div class="infographics__cards" id="infographics__cards">
-      <div class="infographics__card">
-        <div class="infographics__items">
-          <img src="assets/img/infographics.png" alt="infographics" class="infographics__img">
-          <a href="#popup">
-            <div class="infographics__info">
-              <p class="infographics__date">November 17, 2015</p>
-              <p class="infographics__title">Kaduna State 2017 Proposed Budget</p>
-            </div>
-          </a>
+  <div class="filter">
+    <div class="filter__selects filter__selects--2">
+      <div class="filter__select filter__select--2">
+        <button class="filter__btn" onclick="myFunction()">
+          Ministry
+        </button>
+        <div class="filter__select-content" id="myDropdown">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
         </div>
       </div>
-      <div class="infographics__card">
-        <div class="infographics__items">
-          <img src="assets/img/infographics.png" alt="infographics" class="infographics__img">
-          <a href="#popup">
-            <div class="infographics__info">
-              <p class="infographics__date">November 17, 2015</p>
-              <p class="infographics__title">Kaduna State 2017 Proposed Budget</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="infographics__card">
-        <div class="infographics__items">
-          <img src="assets/img/infographics.png" alt="infographics" class="infographics__img">
-          <a href="#popup">
-            <div class="infographics__info">
-              <p class="infographics__date">November 17, 2015</p>
-              <p class="infographics__title">Kaduna State 2017 Proposed Budget</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="infographics__card">
-        <div class="infographics__items">
-          <img src="assets/img/infographics.png" alt="infographics" class="infographics__img">
-          <a href="#popup">
-            <div class="infographics__info">
-              <p class="infographics__date">November 17, 2015</p>
-              <p class="infographics__title">Kaduna State 2017 Proposed Budget</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="infographics__card">
-        <div class="infographics__items">
-          <img src="assets/img/infographics.png" alt="infographics" class="infographics__img">
-          <a href="#popup">
-            <div class="infographics__info">
-              <p class="infographics__date">November 17, 2015</p>
-              <p class="infographics__title">Kaduna State 2017 Proposed Budget</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="infographics__card">
-        <div class="infographics__items">
-          <img src="assets/img/infographics.png" alt="infographics" class="infographics__img">
-          <a href="#popup">
-            <div class="infographics__info">
-              <p class="infographics__date">November 17, 2015</p>
-              <p class="infographics__title">Kaduna State 2017 Proposed Budget</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="infographics__card">
-        <div class="infographics__items">
-          <img src="assets/img/infographics.png" alt="infographics" class="infographics__img">
-          <a href="#popup">
-            <div class="infographics__info">
-              <p class="infographics__date">November 17, 2015</p>
-              <p class="infographics__title">Kaduna State 2017 Proposed Budget</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="infographics__card">
-        <div class="infographics__items">
-          <img src="assets/img/infographics.png" alt="infographics" class="infographics__img">
-          <a href="#popup">
-            <div class="infographics__info">
-              <p class="infographics__date">November 17, 2015</p>
-              <p class="infographics__title">Kaduna State 2017 Proposed Budget</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="infographics__card">
-        <div class="infographics__items">
-          <img src="assets/img/infographics.png" alt="infographics" class="infographics__img">
-          <a href="#popup">
-            <div class="infographics__info">
-              <p class="infographics__date">November 17, 2015</p>
-              <p class="infographics__title">Kaduna State 2017 Proposed Budget</p>
-            </div>
-          </a>
-        </div>
+      <div class="filter__select filter__select--3">
+        <input class="filter__btn" placeholder="Search">
       </div>
     </div>
-  </section>
 
-  <!-- Pagination -->
-  <div class="pagination">
-    <a href="#" class="pagination__item pagination-font">1</a>
-    <a href="#" class="pagination__item pagination-font">2</a>
-    <a href="#" class="pagination__item pagination-font">3</a>
-    <a href="#" class="pagination__item pagination-font">&rarr;</a>
+    <button class="btn btn__search">Search</button>
   </div>
+
+  <section class="table">
+    <h1 hidden>capital projects</h1>
+
+    <table class="table__table">
+      <tr>
+        <th class="tab-port">Ministry</th>
+        <th>Project</th>
+        <th >Amount</th>
+      </tr>
+      <tr>
+        <td class="tab-port">Ministry of Agriculture and Forestry</td>
+        <td>Rehabilitate Irrigation Scheme at Galma</td>
+        <td>172,517,517.60</td>
+      </tr>
+      <tr>
+        <td class="tab-port">Ministry of Agriculture and Forestry</td>
+        <td>Advocacy on alternative to the use of Firewood</td>
+        <td>1,000,000.00</td>
+      </tr>
+      <tr>
+        <td class="tab-port">Ministry of Agriculture and Forestry</td>
+        <td>Control of Epizootic Disease</td>
+        <td>7,815,200.00</td>
+      </tr>
+      <tr>
+        <td class="tab-port">Ministry of Agriculture and Forestry</td>
+        <td>Control of Zoonetic Diseasea</td>
+        <td>8,830,000.00</td>
+      </tr>
+      <tr>
+        <td class="tab-port">Ministry of Agriculture and Forestry</td>
+        <td>Counterpart Funds of 25% Insurance Premium Subsidya</td>
+        <td>172,517,517.60</td>
+      </tr>
+      <tr>
+        <td class="tab-port">Ministry of Agriculture and Forestry</td>
+        <td>Develop Fruits Nursery in Kaduna Statea</td>
+        <td>172,517,517.60</td>
+      </tr>
+      <tr>
+        <td class="tab-port">Ministry of Agriculture and Forestry</td>
+        <td>Equip Institute of Cooperative, Ikara</td>
+        <td>4,150,000.00</td>
+      </tr>
+      <tr>
+        <td class="tab-port">Ministry of Agriculture and Forestry</td>
+        <td>Formation of Agricultural Produce Cooperative Societiesa</td>
+        <td>405,000.00</td>
+      </tr>
+      <tr>
+        <td class="tab-port">Ministry of Agriculture and Forestry</td>
+        <td>Orchard Development Programme</td>
+        <td>6,191,000.00</td>
+      </tr>
+      <tr>
+        <td class="tab-port">Ministry of Agriculture and Forestry</td>
+        <td>Rehabilitate Irrigation Scheme at Galma</td>
+        <td>172,517,517.60</td>
+      </tr>
+    </table>
+
+    <div class="table__details">
+      <p class="table__info">Showing 10 of 30 entries</p>
+      <div class="table__pagination">
+        <a href="#" class="table__pagination__item">1</a>
+        <a href="#" class="table__pagination__item">2</a>
+        <a href="#" class="table__pagination__item">3</a>
+        <a href="#" class="table__pagination__item">&rarr;</a>
+      </div>
+    </div>
+
+  </section>
 
   <footer class="footer">
     <p class="footer__text">POWERED BY © BUDGIT NIGERIA</p>
   </footer>
 
-  <div class="popup" id="popup">
-    <div class="popup__content popup__content--2">
-      <a href="#infographics__cards" class="popup__close popup__close--2">&times;</a>
-      <h3 class="popup__title popup__title--2 u-center">2018 Anti-Corruption</h3>
-      <div class="popup__zoom">
-        <img src="assets/img/infographics.png" alt="infographics" class="popup__img">
-      </div>
-    </div>
-  </div>
 </body>
+<script src="assets//js/main.js"></script>
+
 
 </html>
