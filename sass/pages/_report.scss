@@ -24,9 +24,11 @@
     background: $color-white;
     // border-radius: 12px;
     transition: all 0.2s;
+    position: relative;
 
     //! Remove if not liked
     border-radius: 28px;
+    overflow: hidden;
     
 
     &:hover {
@@ -35,6 +37,19 @@
 
       transform: translateY(-6px); 
 
+    }
+  }
+
+  &__svg {
+    position: absolute;
+    top: 0;
+    
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
     }
   }
 

@@ -41,3 +41,15 @@
 .fill__shadow {
   fill: var(--main-color-10);
 }
+
+//STOP COLOR
+.stop-color {
+  stop-color: var(--main-color);
+}
+
+//DISPLAYS
+.tab-port {
+  @include respond(tab-port) {
+    display: none;
+  }
+}

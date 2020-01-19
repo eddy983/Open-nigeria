@@ -18,6 +18,10 @@
     display: flex;
     flex: 0 1 50%;
 
+    &--2 {
+      flex: 0 1 70%;
+    }
+
     @include respond(tab-port3) {
       flex: 0 1 70%;
     }
@@ -30,6 +34,14 @@
   &__select {
     overflow: hidden;
     flex: 1 1 50%;
+
+    &--2 {
+      flex: 1 1 40%;
+    }
+
+  &--3 {
+      flex: 1 1 60%;
+    }
 
     @include respond(l-phone) {
       margin-bottom: 6%;

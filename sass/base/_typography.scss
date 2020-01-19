@@ -145,6 +145,15 @@ h1 {
   font-size: 4rem;
 }
 
+.table__info {
+  color: #979EA5;
+  font-size: 1.8rem;
+
+  @include respond(phone) {
+    display: none;
+  }
+}
+
 .empty__title {
   font-size: 4rem;
   margin-top: 3%;
