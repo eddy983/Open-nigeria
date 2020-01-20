@@ -22,6 +22,10 @@
       flex: 0 1 70%;
     }
 
+    &--3 {
+      flex: 0 1 25%;
+    }
+
     @include respond(tab-port3) {
       flex: 0 1 70%;
     }

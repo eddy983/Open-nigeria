@@ -20,6 +20,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include respond(tab-port3) {
+      width: 100%;
+    }
   }
 
   &__menu {
@@ -29,6 +33,11 @@
     @include respond(tab-port3) {
       display: block;
     }
+  }
+
+  &__logo {
+    object-fit: contain;
+    height: 4rem;
   }
 
   &__items {
