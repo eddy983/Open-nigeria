@@ -159,6 +159,30 @@
     }
   }
 
+  &__home {
+    padding: 1.6rem 5rem;
+    font-size: 2.4rem;
+    margin-top: 3.5%;
+
+    @include respond(tab-land2) {
+      font-size: 3.5rem;
+      padding: 2.6rem 6rem;
+    }
+
+    @include respond(l-phone) {
+      font-size: 3rem;
+      margin-top: 12%;
+    }
+
+    @include respond(m-phone-m) {
+      width: 100%;
+    }
+
+    @include respond(s-phone) {
+      font-size: 2rem;
+    }
+  }
+
   &__search {
     width: 25%;
     font-size: 2.2rem;
