@@ -40,6 +40,10 @@
   fill: var(--main-color);
 }
 
+.fill__light {
+  fill: var(--main-color-light);
+}
+
 .fill__empty {
   fill: var(--main-color-60);
 }
@@ -51,6 +55,10 @@
 //STOP COLOR
 .stop-color {
   stop-color: var(--main-color);
+}
+
+.stop-color-light {
+  stop-color: var(--main-color-light);
 }
 
 //DISPLAYS
