@@ -1,13 +1,39 @@
 .footer {
-  background: #04081b;
-  padding: 2% 0;
+  background: var(--main-color-warmer-20);
+  padding: 2% $gen-padding;
+  display: flex;
+  justify-content: space-between;
 
-  &__report {
-    margin-top: 5%;
+  @include respond(big-desktop-min) {
+    padding: 2% $gen-padding-large;
+  }
+
+  @include respond(tab-land) {
+    padding: 3% $gen-padding-medium;
   }
 
   @include respond(l-phone) {
-    padding: 8% 0;
-    font-size: 1.2rem;
+    padding: 4% 0%;
+  }
+
+  &__sponsor {
+    display: flex;
+    align-items: center;
+
+    @include respond(l-phone) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    height: 3rem;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__report {
+    margin-top: 5%;
   }
 }

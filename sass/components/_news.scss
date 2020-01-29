@@ -1,45 +1,55 @@
 .news {
   padding: 8% $gen-padding;
-  background: white;
+  background: #F7F7F7;
 
   @include respond(big-desktop-min) {
     padding: 8% $gen-padding-large;
   }
 
+  @include respond(tab-land) {
+    padding: 8% $gen-padding-medium;
+  }
+
+  @include respond(m-phone4) {
+    padding: 8% $gen-padding-small;
+  }
+
   &__items {
     display: flex;
-    margin: 0 -1.5%;
+    flex-wrap: wrap;
+  }
 
-    @include respond(tab-land2) {
-      flex-direction: column;
+  &__container {
+    flex: 1 1 33.3333%;
+
+    @include respond(tab-land) {
+      flex: 1 1 50%;
+    }
+  
+    @include respond(m-phone2) {
+      flex: 1 1 100%;
     }
   }
 
   &__item {
-    flex: 1 1 50%;
-    padding: 0 1.5%;
+    flex: 1 1 33.3333%;
+    padding: 4%;
+    background: $color-white;
+    // border: 1px solid #E0E0E0;
+    border-right: 1px solid #E0E0E0; 
+    border-left: 1px solid #E0E0E0;
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+    transition: all .3s;
 
-    &__main {
-      position: relative;
-      height: 100%;
-
-      @include respond(tab-land2) {
-        margin-bottom: 3%;
-      }
-
-      @include respond(l-phone) {
-        margin-bottom: 6%;
-      }
+    &:hover {
+      background: #85887e;
     }
 
-    &__subs {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 -1.5% -3%;
-
-      @include respond(l-phone) {
-        flex-direction: column;
-      }
+    &__inner {
+      padding: 6%;
+      background: $color-white;
+      height: 30rem;
     }
 
     &__sub {
@@ -56,71 +66,8 @@
       height: 100%;
     }
   }
-  &__img {
-    height: 100%;
+}
 
-    &__img {
-      height: 100%;
-      width: 100%;
-      border-radius: 8px;
-      object-fit: cover;
-
-      //! Remove if not liked
-      border-radius: 20px;
-    }
-  }
-
-  &__main {
-    @include position-bottom;
-    padding: 3.5rem;
-    background: rgba(66, 66, 66, 0.85);
-    border-radius: 8px;
-    width: 100%;
-
-    //! Remove if not liked
-    border-radius: 20px;
-
-    @include respond(l-phone) {
-      padding: 2.8rem;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-    }
-
-    &:hover {
-      // background: rgba($color-primary, 0.81);
-      background: var(--main-color-80);
-      cursor: pointer;
-    }
-  }
-
-  &__overlay {
-    @include position-bottom;
-    height: 100%;
-    width: 100%;
-    border-radius: 8px;
-    background: linear-gradient(
-      0deg,
-      #424242 0%,
-      rgba(255, 255, 255, 0) 193.74%
-    );
-
-    //! Remove if not liked
-    border-radius: 20px;
-
-    &:hover {
-      background: linear-gradient(
-        0deg,
-        var(--main-color-80),
-        var(--main-color-80)
-      );
-      // background: linear-gradient(0deg, rgba(0, 135, 81, 0.81), rgba(0, 135, 81, 0.81));
-    }
-  }
-
-  &__sub {
-    @include news-padding;
-    @include position-bottom;
-  }
+.news__item:hover .news__date {
+  color: white;
 }

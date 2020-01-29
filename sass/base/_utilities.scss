@@ -40,6 +40,10 @@
   fill: var(--main-color);
 }
 
+.black-fill {
+  fill: $color-black;
+}
+
 .fill__light {
   fill: var(--main-color-light);
 }

@@ -222,96 +222,43 @@
 }
 
 .footer {
-  background: #262e3b;
 
-  &__content {
-    display: flex;
-    justify-content: space-between;
-    padding: 4%;
-
-    @include respond(l-phone2) {
-      flex-direction: column;
-      padding: 8%;
-    }
-  }
-
-  &__info {
-    flex: 0 0 48%;
-
-    &__text {
-      font-size: 1.8rem;
-      line-height: 1.8;
-      color: $color-white;
-    }
-  }
-
-  &__social-medias {
-    margin-top: 4%;
-
-    @include respond(l-phone2) {
-      margin-top: 8%;
-    }
-  }
-
-  &__social-media {
-    height: 5.2rem;
-    width: 5.2rem;
-
-    &:not(:last-child) {
-      margin-right: 4%;
-    }
-  }
-
-  &__contacts {
-    flex: 0 0 48%;
-
-    @include respond(l-phone2) {
-      margin-top: 10%;
-    }
-  }
-
-  &__contact {
+  &--map {
+    background: #262e3b;
+  
     &__content {
       display: flex;
-      align-items: center;
-
-      &:not(:last-child) {
-        margin-bottom: 5%;
-      }
-    }
-
-    &__icon {
-      height: 4rem;
-      width: 4rem;
-      margin-right: 3%;
-    }
-
-    &__text {
-      font-size: 1.4rem;
-      letter-spacing: 0.02em;
-      color: $color-white;
-
+      justify-content: space-between;
+      padding: 4%;
+  
       @include respond(l-phone2) {
-        font-size: 1.6rem;
-      }
-
-      @include respond(m-phone4) {
-        font-size: 1.4rem;
+        flex-direction: column;
+        padding: 8%;
       }
     }
-  }
-
-  &__line {
-    border: 0.5px solid $color-white;
-  }
-
-  &__copyright {
-    padding: 1.5rem 0;
-
-    &__text {
-      text-align: center;
-      font-size: 1.4rem;
-      color: $color-white;
+  
+    &__info {
+      flex: 0 0 48%;
+  
+      &__text {
+        font-size: 1.8rem;
+        line-height: 1.8;
+        color: $color-white;
+      }
+    }  
+  
+    &__line {
+      border: 0.5px solid $color-white;
+    }
+  
+    &__copyright {
+      padding: 1.5rem 0;
+  
+      &__text {
+        text-align: center;
+        font-size: 1.4rem;
+        color: $color-white;
+      }
     }
   }
 }

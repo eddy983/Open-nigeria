@@ -1,3 +1,56 @@
+:root {
+  --main-color-h: 2;
+  --main-color-s: 19%;
+  --main-color-l: 51%;
+
+  // pink
+  // --main-color-h: 332;
+  // --main-color-s: 51%;
+  // --main-color-l: 73%;
+
+  // blue
+  // --main-color-h: 195;
+  // --main-color-s: 86%;
+  // --main-color-l: 58%;
+
+  // red
+  // --main-color-h: 0;
+  // --main-color-s: 75%;
+  // --main-color-l: 65%;
+
+  --main-color-hsl: var(--main-color-h), var(--main-color-s), var(--main-color-l);
+
+  --main-color: hsl(var(--main-color-hsl));
+  --main-color-4: hsla(var(--main-color-hsl), .04);
+  --main-color-10: hsla(var(--main-color-hsl), .1);
+  --main-color-20: hsla(var(--main-color-hsl), .2);
+  --main-color-30: hsla(var(--main-color-hsl), .3);
+  --main-color-40: hsla(var(--main-color-hsl), .4);
+  --main-color-50: hsla(var(--main-color-hsl), .5);
+  --main-color-60: hsla(var(--main-color-hsl), .6);
+  --main-color-70: hsla(var(--main-color-hsl), .7);
+  --main-color-80: hsla(var(--main-color-hsl), .8);
+  --main-color-85: hsla(var(--main-color-hsl), .85);
+  --main-color-90: hsla(var(--main-color-hsl), .9);
+
+  --main-color-warm: hsl(calc(var(--main-color-h) + 80), var(--main-color-s), var(--main-color-l));
+  --main-color-warmer: hsl(calc(var(--main-color-h) + 80), calc(var(--main-color-s) / 4), var(--main-color-l));
+  --main-color-warmer-40: hsla(calc(var(--main-color-h) + 80), calc(var(--main-color-s) / 4), var(--main-color-l), .4);
+  --main-color-warmer-20: hsla(calc(var(--main-color-h) + 80), calc(var(--main-color-s) / 4), var(--main-color-l), .2);
+  --main-color-cold: hsl(calc(var(--main-color-h) - 80), var(--main-color-s), var(--main-color-l));
+
+  --main-color-low: hsl(var(--main-color-h), calc(var(--main-color-s) / 2), var(--main-color-l));
+  --main-color-lower: hsl(var(--main-color-h), calc(var(--main-color-s) / 3), var(--main-color-l));
+  --main-color-lowest: hsl(var(--main-color-h), calc(var(--main-color-s) / 4), var(--main-color-l));
+
+  --main-color-light: hsl(var(--main-color-h), var(--main-color-s), calc(var(--main-color-l) / .85));
+  --main-color-lighter: hsl(var(--main-color-h), var(--main-color-s), calc(var(--main-color-l) / .52));
+  --main-color-lightest: hsl(var(--main-color-h), var(--main-color-s), calc(var(--main-color-l) / .27));
+  --main-color-dark: hsl(var(--main-color-h), var(--main-color-s), calc(var(--main-color-l) * .9));
+  --main-color-darker: hsl(var(--main-color-h), var(--main-color-s), calc(var(--main-color-l) * .7));
+  --main-color-dark-85: hsla(var(--main-color-h), var(--main-color-s), calc(var(--main-color-l) * .3), .85);
+}
+
 html {
   //this defines what 1rem is
   /* calc = 10/16px which is 0.625
@@ -21,7 +74,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background: #EBEBEB;
+  background: var(--main-color-lighter);
 }
 
 a:-webkit-any-main {
@@ -33,53 +86,4 @@ a {
   text-decoration: none !important;
 }
 
-// :root {
-//   // RIGHT, will work in all Sass versions.
-//   --accent-color-right: #{$color-primary};
-// }
 
-:root {
-  --main-color-h: 156;
-  --main-color-s: 100%;
-  --main-color-l: 26%;
-
-  // pink
-  // --main-color-h: 332;
-  // --main-color-s: 51%;
-  // --main-color-l: 73%;
-
-  // blue
-  // --main-color-h: 195;
-  // --main-color-s: 86%;
-  // --main-color-l: 58%;
-
-  // red
-  // --main-color-h: 0;
-  // --main-color-s: 75%;
-  // --main-color-l: 65%;
-
-  --main-color-hsl: var(--main-color-h), var(--main-color-s), var(--main-color-l);
-
-  --main-color: hsl(var(--main-color-hsl));
-  --main-color-10: hsla(var(--main-color-hsl), .1);
-  --main-color-20: hsla(var(--main-color-hsl), .2);
-  --main-color-30: hsla(var(--main-color-hsl), .3);
-  --main-color-40: hsla(var(--main-color-hsl), .4);
-  --main-color-50: hsla(var(--main-color-hsl), .5);
-  --main-color-60: hsla(var(--main-color-hsl), .6);
-  --main-color-70: hsla(var(--main-color-hsl), .7);
-  --main-color-80: hsla(var(--main-color-hsl), .8);
-  --main-color-90: hsla(var(--main-color-hsl), .9);
-
-  --main-color-warm: hsl(calc(var(--main-color-h) + 80), var(--main-color-s), var(--main-color-l));
-  --main-color-warmer: hsl(calc(var(--main-color-h) + 80), calc(var(--main-color-s) / 4), var(--main-color-l));
-  --main-color-cold: hsl(calc(var(--main-color-h) - 80), var(--main-color-s), var(--main-color-l));
-
-  --main-color-low: hsl(var(--main-color-h), calc(var(--main-color-s) / 2), var(--main-color-l));
-  --main-color-lower: hsl(var(--main-color-h), calc(var(--main-color-s) / 3), var(--main-color-l));
-  --main-color-lowest: hsl(var(--main-color-h), calc(var(--main-color-s) / 4), var(--main-color-l));
-
-  --main-color-light: hsl(var(--main-color-h), var(--main-color-s), calc(var(--main-color-l) / .85));
-  --main-color-lighter: hsl(var(--main-color-h), var(--main-color-s), calc(var(--main-color-l) / .27));
-  --main-color-dark: hsl(var(--main-color-h), var(--main-color-s), calc(var(--main-color-l) * .9));
-}

@@ -1,10 +1,62 @@
 .header {
   position: relative;
-  height: 60vh;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../assets/img/banner-2.jpg) center/cover no-repeat;
+  height: 75vh;
+  background: linear-gradient(
+      0deg,
+      var(--main-color-dark-85),
+      var(--main-color-dark-85)
+    ),
+    url(../../assets/img/banner-2.jpg) center/cover no-repeat;
 
   @include respond(tab-land) {
-    height: 32vh;
+    height: 50vh;
+  }
+
+  @include respond(l-phone) {
+    height: 80vh;
+  }
+
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 16%;
+    transform: translate(0%, -50%);
+    width: 36%;
+
+    @include respond(tab-land) {
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 54%;
+    }
+
+    @include respond(tab-port) {
+      width: 64%;
+    }
+
+    @include respond(l-phone) {
+      width: 80%;
+    }
+  }
+
+  &__box {
+    background: $color-white;
+    padding: 4.8rem;
+
+    &__sub {
+      padding: 2.4rem 4.8rem;
+      background: var(--main-color-warmer);
+    }
+  }
+
+  &__sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__line {
+    border-bottom: 2px solid $color-white;
+    width: 100%;
   }
 
   &__report {
@@ -17,22 +69,42 @@
     &--info-BG {
       // background: linear-gradient(180deg, rgba(38, 84, 42, 0.9) -8.68%, rgba(160, 212, 164, 0.27) 111.63%), url(../../assets/img/info-BG.png);
       // background: linear-gradient(180deg, var(--main-color-dark) -8.68%, var(--main-color-40) 111.63%), url(../../assets/img/infographics-pattern.png), var(--main-color-cold);
-      background: linear-gradient(180deg, var(--main-color-dark) -8.68%, var(--main-color-40) 111.63%), url(../../assets/img/infographics-pattern.png), var(--main-color-cold);
+      background: linear-gradient(
+          180deg,
+          var(--main-color-dark) -8.68%,
+          var(--main-color-40) 111.63%
+        ),
+        url(../../assets/img/infographics-pattern.png), var(--main-color-cold);
     }
 
     &--doc-BG {
       // background: linear-gradient(180deg, rgba(38, 84, 42, 0.9) -8.68%, rgba(160, 212, 164, 0.27) 111.63%), url(../../assets/img/Proposed-BG.png);
-      background: linear-gradient(180deg, var(--main-color-dark) -8.68%, var(--main-color-40) 111.63%), url(../../assets/img/documents-pattern.png), var(--main-color-cold);
+      background: linear-gradient(
+          180deg,
+          var(--main-color-dark) -8.68%,
+          var(--main-color-40) 111.63%
+        ),
+        url(../../assets/img/documents-pattern.png), var(--main-color-cold);
     }
 
     &--int-BG {
       // background: linear-gradient(180deg, rgba(38, 84, 42, 0.9) -8.68%, rgba(160, 212, 164, 0.27) 111.63%), url(../../assets/img/Interactive-BG.png);
-      background: linear-gradient(180deg, var(--main-color-dark) -8.68%, var(--main-color-40) 111.63%), url(../../assets/img/interactive-pattern.png), var(--main-color-cold);
+      background: linear-gradient(
+          180deg,
+          var(--main-color-dark) -8.68%,
+          var(--main-color-40) 111.63%
+        ),
+        url(../../assets/img/interactive-pattern.png), var(--main-color-cold);
     }
 
     &--rep-BG {
       // background: linear-gradient(180deg, rgba(38, 84, 42, 0.9) -8.68%, rgba(160, 212, 164, 0.27) 111.63%), url(../../assets/img/Policy-BG.png);
-      background: linear-gradient(180deg, var(--main-color-dark) -8.68%, var(--main-color-40) 111.63%), url(../../assets/img/reports-pattern.png), var(--main-color-cold);
+      background: linear-gradient(
+          180deg,
+          var(--main-color-dark) -8.68%,
+          var(--main-color-40) 111.63%
+        ),
+        url(../../assets/img/reports-pattern.png), var(--main-color-cold);
     }
   }
 
@@ -49,10 +121,8 @@
       font-size: 3rem;
     }
 
-
     @include respond(l-phone) {
       font-size: 2.2rem;
     }
-
   }
 }

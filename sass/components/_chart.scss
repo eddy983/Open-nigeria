@@ -12,7 +12,7 @@
   &__card {
     padding: 3% 6%;
     background: $color-white;
-    border-radius: 12px;
+    border: 0.5px solid var(--main-color-30);
 
     &:not(:last-child) {
       margin-bottom: 4%;

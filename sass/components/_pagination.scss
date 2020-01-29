@@ -16,7 +16,6 @@
     padding: 1rem 1.6rem;
     text-decoration: none;
     background: #f9f9f9;
-    border-radius: 8px;
     color: $color-black;
     padding: 1.4rem 2rem;
     font-size: 2rem;
@@ -41,14 +40,12 @@
       background-color: $color-primary;
       background-color: var(--main-color);
       color: $color-white;
-      border-radius: 8px;
     }
   }
 }
 
 .actives {
   background-color: $color-black;
-  border-radius: 8px;
   color: $color-white;
   &:focus {
     outline: 0;

@@ -90,14 +90,11 @@
     outline: none;
     color: inherit;
     padding: 1.4rem 3.6rem;
-    border-radius: 12px;
     width: 100%;
     display: flex;
     border: 2px solid $color-grey-light-1;
     justify-content: space-between;
 
-    //! Remove if not approved
-    border-radius: 100px;
 
     &::after {
       content: url(../../assets/img/down-arrow.svg);
