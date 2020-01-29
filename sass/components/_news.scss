@@ -43,7 +43,7 @@
     transition: all .3s;
 
     &:hover {
-      background: #85887e;
+      background: var(--main-color-warmer);
     }
 
     &__inner {
