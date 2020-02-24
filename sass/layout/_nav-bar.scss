@@ -9,10 +9,22 @@
   @include respond(big-desktop-min) {
     padding: 3.4rem $gen-padding-large;
   }
+  @include respond(big-desktop-min) {
+    padding: 2.4rem $gen-padding-large;
+  }
+
+  @include respond(tab-land) {
+    padding: 2.4rem $gen-padding-medium;
+  }
 
   @include respond(tab-port3) {
     flex-direction: column;
   }
+
+  @include respond(m-phone4) {
+    padding: 2.4rem $gen-padding-small;
+  }
+
 
 
   &__main {

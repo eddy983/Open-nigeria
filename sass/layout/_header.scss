@@ -6,7 +6,7 @@
       var(--main-color-dark-85),
       var(--main-color-dark-85)
     ),
-    url(../../assets/img/banner-2.jpg) center/cover no-repeat;
+    url(../../assets/img/third-mainland-bridge-lagos.jpg) center/cover no-repeat;
 
   @include respond(tab-land) {
     height: 50vh;
@@ -21,7 +21,7 @@
     top: 50%;
     left: 16%;
     transform: translate(0%, -50%);
-    width: 36%;
+    width: 28%;
 
     @include respond(tab-land) {
       left: 50%;

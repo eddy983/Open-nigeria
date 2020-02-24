@@ -12,6 +12,7 @@ h1 {
 .header {
   &__main {
     font-weight: bold;
+    font-size: 2.8rem;
 
     @include respond(m-phone2) {
       font-size: 2.4rem;
@@ -41,17 +42,23 @@ h1 {
 .report {
   &__title {
     font-weight: bold;
-    font-size: 2rem;
-    margin-top: 10%;
+    font-size: 1.8rem;
 
     @include respond(tab-land) {
       font-size: 2.4rem;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
-      width: 100%;
+      // width: 100%;
       text-align: center;
     }
+  }
+
+  &__sub {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: #ABABAB;
+    letter-spacing: 2px;
   }
 }
 
@@ -59,11 +66,11 @@ h1 {
   &__title {
     color: $color-black;
     font-weight: 600;
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0) 73.44%,
-      var(--main-color-warmer-40) 73.45%
-    );
+    // background: linear-gradient(
+    //   180deg,
+    //   rgba(0, 0, 0, 0) 73.44%,
+    //   var(--main-color-warmer-40) 73.45%
+    // );
     width: fit-content;
     margin-bottom: 8%;
 
@@ -78,14 +85,16 @@ h1 {
 
   &__main {
     font-weight: bold;
-    font-size: 1.6rem;
+    // font-size: 1.6rem;
+    font-size: 2rem;
+    color: var(--main-color-light);
 
     @include respond(l-phone) {
-      font-size: 1.2rem;
+      font-size: 2.4rem;
     }
 
     @include respond(m-phone2) {
-      font-size: 1.6rem;
+      font-size: 2.2rem;
     }
   }
 
@@ -95,12 +104,12 @@ h1 {
     margin-top: 1.2rem;
 
     @include respond(l-phone) {
-      font-size: 1.2rem;
+      font-size: 1.8rem;
     }
 
-    @include respond(m-phone2) {
-      font-size: 1.4rem;
-    }
+    // @include respond(m-phone2) {
+    //   font-size: 1.4rem;
+    // }
   }
 
   &__date {

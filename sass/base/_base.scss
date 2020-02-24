@@ -49,6 +49,7 @@
   --main-color-dark: hsl(var(--main-color-h), var(--main-color-s), calc(var(--main-color-l) * .9));
   --main-color-darker: hsl(var(--main-color-h), var(--main-color-s), calc(var(--main-color-l) * .7));
   --main-color-dark-85: hsla(var(--main-color-h), var(--main-color-s), calc(var(--main-color-l) * .3), .85);
+  --main-color-dark-90: hsla(var(--main-color-h), var(--main-color-s), calc(var(--main-color-l) * .3), .90);
 }
 
 html {

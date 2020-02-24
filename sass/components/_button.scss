@@ -109,7 +109,12 @@
 
   &__report {
     font-size: 1.7rem;
-    padding: 1.2rem 4rem;
+    padding: 1.2rem 4.4rem;
+    margin-top: 2.8rem;
+
+    &:hover {
+      background: var(--main-color-darker);
+    }
 
     @include respond (tab-land) {
       font-size: 2.6rem;
@@ -117,6 +122,10 @@
 
     @include respond (tab-port) {
       font-size: 2.2rem;
+    }
+
+    @include respond(l-phone) {
+      align-self: stretch;
     }
   }
 
@@ -206,6 +215,22 @@
     @include respond(l-phone) {
       padding: 1.4rem 0;
       width: 100%;
+    }
+  }
+
+  &__read {
+    color: var(--main-color-darker);
+    font-size: 1.4rem;
+    padding: 1rem 2rem 1rem 0;
+    background: $color-white;
+    margin-top: 6%;
+
+    @include respond(l-phone) {
+      font-size: 2.2rem;
+    }
+
+    @include respond(m-phone2) {
+      font-size: 2rem;
     }
   }
 }
