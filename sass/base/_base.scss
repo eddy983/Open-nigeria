@@ -75,7 +75,8 @@ html {
 
 body {
   box-sizing: border-box;
-  background: var(--main-color-lighter);
+  // background: var(--main-color-lighter);
+  background: $color-white;
 }
 
 a:-webkit-any-main {
