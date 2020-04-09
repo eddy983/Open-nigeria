@@ -30,6 +30,8 @@
 
     &:hover {
       background: $color-white;
+      color: $color-blue-dark;
+      outline: none;
     }
 
     @include respond(big-desktop) {
