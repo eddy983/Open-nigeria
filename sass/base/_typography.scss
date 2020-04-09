@@ -45,23 +45,23 @@ h1 {
 
 .report {
   &__title {
-    font-weight: bold;
+    font-weight: 500;
     font-size: 1.8rem;
+    letter-spacing: 0.8px;
 
     @include respond(tab-land) {
       font-size: 2.4rem;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
-      // width: 100%;
       text-align: center;
     }
   }
 
   &__sub {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     font-size: 1.4rem;
-    color: #ABABAB;
+    color: #3a3939;
     letter-spacing: 1px;
   }
 }
@@ -89,8 +89,8 @@ h1 {
 
   &__main {
     font-weight: bold;
-    // font-size: 1.6rem;
     font-size: 2rem;
+    letter-spacing: 1px;
     color: var(--main-color-light);
 
     @include respond(l-phone) {
