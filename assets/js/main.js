@@ -9,6 +9,13 @@ console.dir(state_img);
 
 tooltipModal.style.display = "none";
 
+
+//! WHERE THE HOST LINK WAS ADD
+function getHost(){
+    const host = window.location.hostname;
+    return host.includes('localhost') ? 'http://localhost:8000' : 'http://' + window.location.hostname
+}
+
 countries.forEach(element => {
     element.addEventListener("mousemove", e => {
         tooltipModal.style.display = "";
@@ -27,6 +34,11 @@ countries.forEach(element => {
     element.addEventListener("mouseleave", e => {
         tooltipModal.style.display = "none";
     });
+
+    //! WHERE THE LINK WAS TARGETED TO ON CLICK
+    element.addEventListener("click", (e) => { 
+        window.location.href = getHost() + "/state/" + e.target.id
+    })
 });
 
 var filter_rank = state_name => {
@@ -208,6 +220,8 @@ window.onclick = function (e) {
         }
     }
 };
+
+
 
 // FOR THE DROPDOWNS
 
