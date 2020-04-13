@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Lagos</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/main.min.css">
+
+  <!-- FONTS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@8p00&family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <div class="nav-bar">
+    <div class="nav-bar__items">
+      <div class="nav-bar__main">
+        <a href="home.html" class="nav-bar__logo">
+          OPEN LAGOS
+        </a>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon nav-bar__menu" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class="nav-bar__links" id="myLinks">
+        <a href="documents.html" class="nav-bar__link">DATA</a>
+        <a href="about.html" class="nav-bar__link">CONTACT</a>
+        <a href="#" class="nav-bar__link">DEVELOPER</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="inner">
+    <h3 class="inner__heading"> Lagos Population By Ethnic Group, Annual (2019)</h3>
+    <p class="inner__sub">FILE FORMATS</p>
+    <div class="inner__container">
+      <div class="inner__formats">
+        <div class="inner__format">
+          <p class="format">CSV FORMAT</p>
+          <a href="#" class="btn btn__format btn__format__csv">Download</a>
+        </div>
+        <div class="inner__format">
+          <p class="format">XML FORMAT</p>
+          <a href="#" class="btn btn__format btn__format__xml">Download</a>
+        </div>
+        <div class="inner__format">
+          <p class="format">PDF FORMAT</p>
+          <a href="#" class="btn btn__format btn__format__pdf">Download</a>
+        </div>
+        <div class="inner__format">
+          <p class="format">DOC FORMAT</p>
+          <a href="#" class="btn btn__format btn__format__doc">Download</a>
+        </div>
+        <div class="inner__format">
+          <p class="format">ZIP FORMAT</p>
+          <a href="#" class="btn btn__format btn__format__zip">Download</a>
+        </div>
+      </div>
+      <div class="inner__info">
+        <div class="inner__features">
+          <div class="inner__views">
+            <p class="view">Views:</p>
+            <a href="#" class="btn btn__view clicked">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M1.39446 17.1725V17.1725L1.39106 17.1725C1.28294 17.175 1.19257 17.0889 1.18935 16.9828V3.6377V3.4877H1.03935H0H-0.15V3.6377V17.8508H-0.150017L-0.149983 17.8531C-0.144394 18.222 0.161878 18.5168 0.529407 18.5119H18.4918H18.6418V18.3619V17.3225V17.1725H18.4918H1.39446Z"
+                    fill="white" stroke="white" stroke-width="0.3" />
+                  <path
+                    d="M19.0508 5.03728C18.7953 4.90303 18.5095 4.83374 18.2193 4.83374C17.2363 4.83374 16.4351 5.63058 16.4351 6.61363C16.4351 7.02938 16.578 7.43213 16.8465 7.75259L14.8891 9.88327C14.3045 9.09509 13.1872 8.93053 12.399 9.51516C12.2994 9.58879 12.2084 9.67107 12.1261 9.76634L10.4762 8.41518C10.4762 8.39353 10.4762 8.37188 10.4762 8.35022C10.4762 7.36717 9.67934 6.566 8.69195 6.566C7.7089 6.566 6.90773 7.36284 6.90773 8.35022C6.90773 8.52778 6.93371 8.701 6.98568 8.8699L5.19713 11.1045C4.32667 10.6411 3.24401 10.9703 2.78064 11.8451C2.31726 12.7155 2.64639 13.7982 3.52117 14.2615C4.39163 14.7249 5.47429 14.3958 5.93767 13.521C6.27979 12.8801 6.19751 12.1006 5.73413 11.5419L7.34946 9.52383C7.99472 10.2644 9.12069 10.3423 9.86122 9.69705C10.0344 9.54548 10.1774 9.36359 10.2813 9.15572L11.7667 10.3726C11.4462 11.3037 11.9443 12.3171 12.8753 12.6376C13.8064 12.958 14.8198 12.46 15.1403 11.5289C15.2442 11.2214 15.2659 10.888 15.1966 10.5675L17.3792 8.18999C18.2497 8.65337 19.328 8.31991 19.7914 7.44945C20.2547 6.57899 19.9213 5.50066 19.0508 5.03728Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="#" class="btn btn__view unclicked">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.5 0.820312H2.5C1.12167 0.820312 0 1.94199 0 3.32031V16.6536C0 18.0319 1.12167 19.1536 2.5 19.1536H17.5C18.8783 19.1536 20 18.0319 20 16.6536V3.32031C20 1.94199 18.8783 0.820312 17.5 0.820312ZM6.25 6.65359H9.16672V9.15359H6.25V6.65359ZM4.58328 9.15359H1.66672V6.65359H4.58328V9.15359ZM10.8333 6.65359H13.75V9.15359H10.8333V6.65359ZM15.4167 6.65359H18.3333V9.15359H15.4167V6.65359ZM1.66672 10.8203H4.58328V13.3203H1.66672V10.8203ZM6.25 10.8203H9.16672V13.3203H6.25V10.8203ZM9.16672 14.987V17.487H6.25V14.987H9.16672ZM10.8333 14.987H13.75V17.487H10.8333V14.987ZM10.8333 13.3203V10.8203H13.75V13.3203H10.8333ZM15.4167 10.8203H18.3333V13.3203H15.4167V10.8203ZM1.66672 16.6536V14.987H4.58328V17.487H2.5C2.04086 17.487 1.66672 17.1129 1.66672 16.6536ZM17.5 17.487H15.4167V14.987H18.3333V16.6536C18.3333 17.1129 17.9591 17.487 17.5 17.487Z"
+                  fill="#253992" />
+              </svg>
+            </a>
+          </div>
+          <div class="inner__feature">
+            <a href="#" class="btn btn__embed">
+              <svg class="inner__icon" width="20" height="16" viewBox="0 0 20 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 11.5L14.5 13L19.5 8L14.5 3L13 4.5L16.5 8L13 11.5Z" fill="white" />
+                <path d="M7 4.5L5.5 3L0.5 8L5.5 13L7 11.5L3.5 8L7 4.5Z" fill="white" />
+                <path d="M10.9578 2.35181L12.0432 2.64781L9.04345 13.6482L7.95801 13.3522L10.9578 2.35181H10.9578Z"
+                  fill="white" />
+              </svg>
+              Embed Chart
+            </a>
+            <a href="#" class="btn btn__embed">
+              <svg class="inner__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M15.7552 11.8429L14.7742 11.2765C14.7944 11.0516 14.7944 10.8258 14.7742 10.6008L15.7552 10.0344C15.9894 9.89919 16.0697 9.59963 15.9345 9.36538L14.8291 7.45075C14.6939 7.21666 14.3942 7.13622 14.16 7.27147L13.1789 7.83791C12.9941 7.7076 12.7986 7.59454 12.5938 7.49957V6.36722C12.5938 6.09672 12.3745 5.87744 12.104 5.87744H9.89324C9.62274 5.87744 9.40343 6.09675 9.40343 6.36722V7.4995C9.19868 7.5945 9.00318 7.70757 8.81831 7.83785L7.83724 7.27141C7.60312 7.13625 7.30343 7.21644 7.16818 7.45066L6.06277 9.36528C5.92752 9.59953 6.00777 9.8991 6.24202 10.0343L7.22299 10.6007C7.20284 10.8257 7.20284 11.0515 7.22299 11.2764L6.24202 11.8428C6.00793 11.9779 5.92752 12.2777 6.06274 12.5119L7.16815 14.4265C7.3034 14.6608 7.60296 14.741 7.83721 14.6058L8.81827 14.0393C9.00312 14.1697 9.19862 14.2827 9.4034 14.3777V15.5101C9.4034 15.7806 9.62271 15.9998 9.89318 15.9998H12.104C12.3745 15.9998 12.5937 15.7805 12.5937 15.5101V14.3778C12.7985 14.2828 12.994 14.1698 13.1789 14.0394L14.1599 14.6058C14.3942 14.7411 14.6937 14.6608 14.829 14.4266L15.9344 12.5119C16.0696 12.2779 15.9894 11.9781 15.7552 11.8429ZM10.9986 12.9568C9.88587 12.9568 8.98056 12.0515 8.98056 10.9387C8.98056 9.82591 9.88587 8.9206 10.9986 8.9206C12.1114 8.9206 13.0167 9.82591 13.0167 10.9387C13.0167 12.0515 12.1114 12.9568 10.9986 12.9568Z"
+                    fill="white" />
+                  <path
+                    d="M7.8884 4.74334L7.16612 4.32634C7.17578 4.18509 7.17578 4.04353 7.16612 3.90228L7.8884 3.48528C8.12265 3.35003 8.2029 3.05047 8.06768 2.81622L7.19128 1.29822C7.05615 1.06412 6.75643 0.983719 6.52222 1.11894L5.7999 1.53594C5.68234 1.45669 5.55981 1.38584 5.43265 1.32356V0.489812C5.43265 0.219312 5.21334 0 4.94284 0H3.19003C2.91953 0 2.70025 0.219312 2.70025 0.489812V1.3235C2.57312 1.38578 2.45056 1.45666 2.333 1.53587L1.61068 1.11888C1.37662 0.98375 1.07684 1.06388 0.941621 1.29813L0.0652147 2.81612C-0.0700353 3.05037 0.0102147 3.34994 0.244496 3.48519L0.966777 3.90219C0.957121 4.04344 0.957121 4.185 0.966777 4.32625L0.244496 4.74328C0.0102459 4.87853 -0.0700041 5.17809 0.0652147 5.41234L0.941621 6.93034C1.07678 7.16447 1.37643 7.24481 1.61068 7.10962L2.33296 6.69263C2.45053 6.77184 2.57309 6.84275 2.70021 6.905V7.73872C2.70021 8.00922 2.91953 8.2285 3.19 8.2285H4.94284C5.21334 8.2285 5.43262 8.00919 5.43262 7.73872V6.905C5.55975 6.84272 5.68228 6.77187 5.79987 6.69263L6.52218 7.10962C6.75622 7.24481 7.056 7.16469 7.19122 6.93044L8.06762 5.41244C8.20293 5.17816 8.12265 4.87859 7.8884 4.74334ZM4.06643 5.81578C3.12825 5.81578 2.36493 5.05247 2.36493 4.11425C2.36493 3.17603 3.12825 2.41272 4.06643 2.41272C5.00465 2.41272 5.76793 3.17603 5.76793 4.11425C5.76793 5.05247 5.00465 5.81578 4.06643 5.81578Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              Data Api
+            </a>
+          </div>
+        </div>
+
+        <div class="inner__chart">
+
+        </div>
+
+        <div class="inner__describe">
+          <h5 class="dataset--title">ABOUT THIS DATASET</h5>
+          <p class="dataset--sub">
+            Uniquely coordinate intuitive deliverables via inexpensive e-tailers. Appropriately conceptualize premium
+            supply chains whereas multidisciplinary intellectual capital. Efficiently predominate just in time core
+            competencies whereas future-proof innovation.
+          </p>
+          <div class="inner__description">
+            <div class="inner__type">
+              <p class="describe">Last Updated</p>
+            </div>
+            <div class="inner__information">
+              <p class="information">February 15, 2019</p>
+            </div>
+          </div>
+          <div class="inner__description">
+            <div class="inner__type">
+              <p class="describe">Created</p>
+            </div>
+            <div class="inner__information">
+              <p class="information">July 6, 2018</p>
+            </div>
+          </div>
+          <div class="inner__description">
+            <div class="inner__type">
+              <p class="describe">Format(s)</p>
+            </div>
+            <div class="inner__information">
+              <p class="information"> <span>CSV</span>, <span>XML</span>, <span>PDF</span>, <span>DOC</span>,
+                <span></span>ZIP</p>
+            </div>
+          </div>
+          <div class="inner__description">
+            <div class="inner__type">
+              <p class="describe">Coverage</p>
+            </div>
+            <div class="inner__information">
+              <p class="information">January 1, 2010 to December 31, 2019</p>
+            </div>
+          </div>
+          <div class="inner__description">
+            <div class="inner__type">
+              <p class="describe">Frequency</p>
+            </div>
+            <div class="inner__information">
+              <p class="information">Annual</p>
+            </div>
+          </div>
+          <div class="inner__description">
+            <div class="inner__type">
+              <p class="describe">Source(s)</p>
+            </div>
+            <div class="inner__information">
+              <p class="information">Local Government / LCDAs</p>
+            </div>
+          </div>
+          <div class="inner__description">
+            <div class="inner__type">
+              <p class="describe">Source URL</p>
+            </div>
+            <div class="inner__information">
+              <a href="#" class="inner__link">
+                http://www.tablebuilder.ngstat.gov.sg/publicfacing/createDataTable.action?refId=2869</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <p class="footer__text">Powered by BudgIT</p>
+    <div class="footer__sponsor">
+      <p class="footer__sub">Supported by</p>
+      <img class="footer__logo" src="assets/img/Lagos-Logo.png" alt="Lagos State Logo">
+      <img class="footer__logo" src="http://opennigeria.eu-west-2.elasticbeanstalk.com/assets/img/EU-logo.jpg"
+        alt="European Union Logo">
+      <img class="footer__logo"
+        src="http://opennigeria.eu-west-2.elasticbeanstalk.com/assets/img/British_Council_logo.png"
+        alt="British Council Logo">
+    </div>
+  </footer>
+
+</body>
+
+<script>
+  /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "flex") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "flex";
+    }
+  }
+</script>
+
+</html>

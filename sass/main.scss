@@ -11,6 +11,8 @@
 @import "components/button";
 @import "components/card";
 @import "components/chart";
+@import "components/data";
+@import "components/datasets";
 @import "components/feedback";
 @import "components/filter";
 @import "components/lga";
@@ -26,10 +28,14 @@
 @import "layout/nav-bar";
 @import "layout/navigation";
 
+@import "pages/about";
 @import "pages/budget";
+@import "pages/contact";
+@import "pages/documents";
 @import "pages/empty";
 @import "pages/home";
 @import "pages/infographics";
+@import "pages/inner";
 @import "pages/map";
 @import "pages/report";
 

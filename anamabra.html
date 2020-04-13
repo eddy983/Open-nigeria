@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Open Nigeria States</title>
+
+  <!-- css -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai+2:800|Poppins:400,500,600,700,800,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/main.min.css">
+
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    :root {
+      --main-color-h: 201;
+      --main-color-s: 79%;
+      --main-color-l: 54%;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav-bar nav-bar--trans" id="nav">
+    <div class="nav-bar__main">
+      <a href="anamabra.html" class="nav-bar__con">
+        <img src="assets/img/Anamabra-logo.png" alt="Logo" class="nav-bar__logo" />
+        Anamabra State
+      </a>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon nav-bar__menu" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="nav-bar__items" id="myLinks">
+      <ul class="nav-bar__links">
+        <a href="anamabra.html" class="nav-bar__link__link">
+          <li class="nav-bar__link">
+            HOME
+          </li>
+        </a>
+        <a href="infographics.html" class="nav-bar__link__link">
+          <li class="nav-bar__link">
+            INFOGRAHPICS
+          </li>
+        </a>
+        <a href="capital-projects.html" class="nav-bar__link__link">
+          <li class="nav-bar__link">
+            CAPITAL PROJECTS
+          </li>
+        </a>
+      </ul>
+    </div>
+
+    <div class="search" id="search">
+      <input class="search__input" type="text"
+        placeholder="SEARCH FOR DOCUMENT (e.g KADUNA STATE PROPOSED BUDGET 2019 ">
+      <div class="search__btn">
+        <a href="#nav" class="search__link">
+          <p class="search__close">&otimes;</p>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header" style="background: linear-gradient(
+    179.3deg,
+    var(--main-color-darker) -18.74%,
+    var(--main-color-dark-85) 73.76%,
+    rgba(218, 201, 200, 0) 143.25%
+  ),
+  url(../../assets/img/Anamabra-banner.png), var(--main-color);
+  background-blend-mode: normal, luminosity, normal;
+  background-size: cover;
+  background-position: bottom;">
+    <div class="header__container">
+      <div class="header__box">
+        <p class="header__sub-title">
+          OUR FUTURE IS IN NUMBERS
+        </p>
+        <h1 class="header__main">data to inform facts-based dialogue</h1>
+      </div>
+
+    </div>
+  </header>
+
+  <section class="report">
+    <h1 hidden>Reports</h1>
+
+    <div class="report__cards">
+
+      <div class="report__card">
+        <div class="report__items">
+          <img src="assets/img/proposed.png" alt="Proposal Budget" class="report__img">
+          <div class="report__item">
+            <p class="report__title">Proposed Budget</p>
+            <p class="report__sub">
+              The government’s revenue generation and spending plan as prepared by MDAs and the budget office/ministry
+              and as presented by the governor ...
+            </p>
+            <button onclick="window.location.href = 'proposed-budget.html'" class="btn btn__report">View Budget</button>
+          </div>
+        </div>
+      </div>
+      <div class="report__card">
+        <div class="report__items">
+          <img src="assets/img/approved.png" alt="Approved Budget" class="report__img">
+          <div class="report__item">
+            <p class="report__title">Approved Budget</p>
+            <p class="report__sub">
+              This is the product of the State Assembly’s discussions on the executive budget proposal. The assembly
+              makes modifications...
+            </p>
+            <button onclick="window.location.href = 'proposed-budget.html'" class="btn btn__report">View Budget</button>
+          </div>
+        </div>
+      </div>
+      <div class="report__card">
+        <div class="report__items">
+          <img src="assets/img/citizen.png" alt="Citizen Budget" class="report__img">
+          <div class="report__item">
+            <p class="report__title">Citizen Budget</p>
+            <p class="report__sub">
+              A visual and simplified version of the approved budget produced with citizen’s understanding and
+              engagement in mind.
+            </p>
+            <button onclick="window.location.href = 'proposed-budget.html'" class="btn btn__report">View Budget</button>
+          </div>
+        </div>
+      </div>
+      <div class="report__card">
+        <div class="report__items">
+          <img src="assets/img/implemantation.png" alt="Budget Implementation" class="report__img">
+          <div class="report__item">
+            <p class="report__title">Budget Implementation</p>
+            <p class="report__sub">
+              Periodical reports detailing the progress made by the government in executing the projects and objectives
+              outlined in the approved budget
+            </p>
+            <button onclick="window.location.href = 'proposed-budget.html'" class="btn btn__report">View Budget</button>
+          </div>
+        </div>
+      </div>
+      <div class="report__card">
+        <div class="report__items">
+          <img src="assets/img/Audited.png" alt="Audited Statement" class="report__img">
+          <div class="report__item">
+            <p class="report__title">Audited Statement</p>
+            <p class="report__sub">
+              This contains the consolidated statement of actual state revenues and expenditure as well as the
+              independent opinion of the state’s...
+            </p>
+            <button onclick="window.location.href = 'proposed-budget.html'" class="btn btn__report">View Budget</button>
+          </div>
+        </div>
+      </div>
+      <div class="report__card">
+        <div class="report__items">
+          <img src="assets/img/policy.png" alt="Policy Statement" class="report__img">
+          <div class="report__item">
+            <p class="report__title">Policy Statement</p>
+            <p class="report__sub">
+              Documents outlining policy directions and specifics of the state. This can include the Medium Term
+              Expenditure Framework, long term visioning...
+            </p>
+            <button onclick="window.location.href = 'proposed-budget.html'" class="btn btn__report">View Budget</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="lga">
+    <h1 hidden>Local governments areas</h1>
+
+    <h3 class="lga__title">View Local Government Budgets Here</h3>
+    <a href="lga(empty).html" class="btn btn__view">VIEW</a>
+  </section>
+
+  <section class="news">
+    <h1 class="news__title">News Update</h1>
+
+    <div class="news__items">
+      <div class="news__container">
+        <div class="news__item">
+          <div class="news__overlay"></div>
+          <img src="assets/img/news2.jpeg" alt="News Image" class="news__img">
+          <div class="news__item__inner">
+            <p class="news__main">Gov.Sanwo-Olu’s 200 Days in Office</p>
+            <p class="news__sub">
+              The Lagos State Government on Wednesday restated its commitment to equipping physically-challenged
+            </p>
+            <button class="btn btn__read">Read More</button>
+          </div>
+        </div>
+      </div>
+      <div class="news__container">
+        <div class="news__item">
+          <div class="news__overlay"></div>
+          <img src="assets/img/news.jpg" alt="News Image" class="news__img">
+          <div class="news__item__inner">
+            <p class="news__main">No going back on okada, keke restriction</p>
+            <p class="news__sub">
+              The Lagos State Government on Wednesday restated its commitment to equipping physically-challenged
+            </p>
+            <button class="btn btn__read">Read More</button>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="news__container">
+        <div class="news__item">
+          <div class="news__overlay"></div>
+          <img src="assets/img/fire.jpg" alt="News Image" class="news__img">
+          <div class="news__item__inner">
+            <p class="news__main">Lagos fire service averts another tragedy</p>
+            <p class="news__sub">
+              The Lagos State Government on Wednesday restated its commitment to equipping physically-challenged
+            </p>
+            <button class="btn btn__read">Read More</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="footer__text">POWERED BY BUDGIT NIGERIA</p>
+    <div class="footer__sponsor">
+      <p class="footer__sub">Supported by</p>
+      <img class="footer__logo" src="assets/img/EU-logo.jpg" alt="European Union Logo">
+      <img class="footer__logo" src="assets/img/British_Council_logo.png" alt="British Council Logo">
+    </div>
+  </footer>
+
+  <div class="popup" id="popup">
+    <div class="popup__content">
+      <a href="#feedback" class="popup__close">&times;</a>
+      <h3 class="popup__title u-center">Feedback Form</h3>
+      <p class="popup__sub u-center">Do you have any feedback for the State Government?</p>
+      <div class="popup__field">
+        <label for="name" class="popup__label">Name</label>
+        <input type="text" name="name" class="popup__input">
+      </div>
+      <div class="popup__field">
+        <label for="name" class="popup__label">Email</label>
+        <input type="email" name="name" class="popup__input">
+      </div>
+      <div class="popup__field">
+        <label for="feedback" class="popup__label">Feed Back / Complaints</label>
+        <textarea name="feedback" cols="30" rows="6" class="popup__input"></textarea>
+      </div>
+      <button class="btn btn__send">SEND</button>
+
+    </div>
+  </div>
+
+  <script>
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+
+</html>

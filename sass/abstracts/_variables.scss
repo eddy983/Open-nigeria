@@ -1,6 +1,18 @@
 // COLORS
 $color-primary: #008751;
-// $color-primary: #FF404B;
+
+$color-blue: #253992;
+$color-dark-blue: #335073;
+$color-blue-2: #0164B3;
+$color-light-blue: #009DE4;
+$color-orange: #F5A84C;
+$color-white: #ffffff;
+$color-dark-grey: #26292c;
+$color-grey: #525960;
+$color-grey-2: #9199A1;
+$color-greyish-blue: #838C95;
+$border-color: #eeeeee;
+$color-black: #031926;
 
 
 
@@ -11,13 +23,9 @@ $color-green: #7faf1b;
 $color-green-light: #a0d4a4;
 $color-green-lighter: #edf3e2;
 $color-grey-blue: #c2d1d9;
-$color-black: #031926;
-$color-black-2: #04081b;
-$color-grey: #a5adb6;
 $color-grey-dark: #bdbdbd;
 $color-grey-dark-1: #dadada;
 $color-grey-light-1: #e0e0e0;
-$color-white: #ffffff;
 
 $shadow-black: #111111;
 
@@ -29,6 +37,15 @@ $gen-padding-large: 18%;
 $gen-padding-medium: 10%;
 $gen-padding-small: 6%;
 
+// PADDING
+$gen-padding: 16%;
+$gen-padding-new-large: 20%;
+$gen-padding-new-medium: 10%;
+$gen-padding-new-small: 6%;
+
+$land-top-padding: 8%;
+$land-top-padding-small: 12%;
+
 // FONT
 $default-font-size: 1.6rem;
 
@@ -39,4 +56,5 @@ $gutter-vertical: 3rem;
 $gutter-vertical-small: 6rem;
 $gutter-horizontal: 3rem;
 
-
+// CARD
+$circle: 15.2rem;

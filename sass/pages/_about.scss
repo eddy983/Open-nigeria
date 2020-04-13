@@ -1,0 +1,161 @@
+%border {
+  border: 2px solid #c4c4c4;
+  color: inherit;
+  padding: 3% 2.4%;
+
+  &:focus {
+    border: 2px solid $color-blue;
+    outline: 0;
+  }
+}
+.about {
+  padding: $land-top-padding $gen-padding;
+
+  @include respond(big-desktop-min) {
+    padding: $land-top-padding $gen-padding-large;
+  }
+
+  @include respond(tab-land) {
+    padding: $land-top-padding $gen-padding-medium;
+  }
+
+  @include respond(l-phone2) {
+    padding: $land-top-padding-small $gen-padding-small;
+  }
+
+  &__cards {
+    @include flex;
+    margin-top: 18%;
+
+    @include respond(l-phone2) {
+      @include fxd-c;
+      margin-top: 30%;
+    }
+
+    @include respond(sx-phone) {
+      margin-top: 50%;
+    }
+  }
+
+  &__card {
+    @include flex-center;
+    @include fxd-c;
+    @include three-col;
+    position: relative;
+    padding: 8% 3% 3%;
+    background: $color-white;
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-right: 3%;
+
+      @include respond(l-phone2) {
+        margin-right: 0;
+        margin-bottom: 24%;
+      }
+
+      @include respond(sx-phone) {
+        margin-bottom: 45%;
+      }
+    }
+
+    @include respond(tab-land) {
+      padding: 12% 3% 3%;
+    }
+
+    @include respond(l-phone2) {
+      padding: 18% 3% 10%;
+    }
+  }
+
+  &__circle {
+    @include flex-center;
+    height: $circle;
+    width: $circle;
+    background: $color-white;
+    box-shadow: 0px 4px 10px rgba(189, 189, 189, 0.32);
+    border-radius: 1000px;
+    position: absolute;
+    top: 0%;
+    transform: translateY(-50%);
+  }
+
+  &__container {
+    background: $color-white;
+    margin-top: 10%;
+    padding: 6%;
+
+    @include respond(sx-phone) {
+      margin-top: 20%;
+    }
+  }
+
+  &__form {
+    @include horizontal;
+  }
+
+  &__items {
+    @include flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include respond(l-phone2) {
+      @include fxd-c;
+    } 
+  }
+
+  &__item {
+    @include horizontal;
+    flex: 0 1 48.5%;
+    margin-bottom: 3%;
+
+    @include respond(l-phone2) {
+      margin-bottom: 13%;
+    }
+  }
+
+  &__input {
+    @extend %border;
+    font-size: 1.6rem;
+    height: 100%;
+    border-radius: 0 !important;
+  }
+
+  &__textarea {
+    @extend %border;
+    width: 100%;
+  }
+
+  &__infos {
+    @include flex;
+    margin-top: 12%;
+
+    @include respond(l-phone2) {
+      @include fxd-c;
+    }
+
+    @include respond(sx-phone) {
+      margin-top: 20%;
+    }
+  }
+
+  &__texts {
+    margin-left: 4%;
+  }
+
+  &__info {
+    @include three-col;
+    @include flex;
+    @include ai-c;
+
+    &:not(:last-child) {
+      margin-right: 3%;
+
+      @include respond(l-phone2) {
+        margin-right: 0;
+        margin-bottom: 12%;
+      }
+    }
+  }
+  
+}

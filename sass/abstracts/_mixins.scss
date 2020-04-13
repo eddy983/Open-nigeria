@@ -223,3 +223,114 @@ ORDER: Base + typography > general layout + grid > page layout > components
   width: 100%;
   object-fit: cover;
 }
+
+@mixin position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin position-fixed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin position-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@mixin gen-section {
+  margin-top: 8%;
+}
+
+@mixin news-padding {
+  padding: 2.8rem;
+}
+
+@mixin card-container {
+  display: flex;
+  margin: 0 -1.5%;
+  flex-wrap: wrap;
+}
+
+@mixin card {
+  width: 33.33%;
+  padding: 0 1.5%;
+  margin-bottom: 3%;
+
+  @include respond(tab-land) {
+    width: 50%;
+  }
+
+  @include respond(l-phone) {
+    width: 100%;
+    margin-bottom: 6%;
+  }
+}
+
+@mixin image {
+  width: 100%;
+  object-fit: cover;
+}
+
+@mixin center-align {
+  text-align: center;
+}
+
+@mixin tabs {
+  flex: 1 1 28.5%;
+  margin-right: 3%;
+}
+
+@mixin docs {
+  flex: 1 1 68.5%;
+}
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin fxd-c {
+  flex-direction: column;
+}
+
+@mixin jc-c {
+  justify-content: center;
+}
+
+@mixin jc-sb {
+  justify-content: space-between;
+}
+
+@mixin ai-c {
+  align-items: center;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin horizontal {
+  display: flex;
+  flex-direction: column;
+}
+@mixin none {
+  display: none;
+}
+
+@mixin three-col {
+  flex: 1 1 33.333333333333333%;
+}
+
+@mixin hover-link {
+  text-decoration: underline;
+  color: $color-orange;
+}
+

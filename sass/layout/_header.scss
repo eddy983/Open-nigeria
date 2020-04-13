@@ -19,11 +19,11 @@
 
   background: linear-gradient(
       179.3deg,
-      #614342 -18.74%,
-      rgba(88, 61, 60, 0.86) 73.76%,
+      var(--main-color-darker) -18.74%,
+      var(--main-color-dark-85) 73.76%,
       rgba(218, 201, 200, 0) 143.25%
     ),
-    url(../../assets/img/head-ban2.jpg), #996b69;
+    url(../../assets/img/head-ban2.jpg), var(--main-color);
   background-blend-mode: normal, luminosity, normal;
   background-size: cover;
   background-position: bottom;
@@ -34,6 +34,33 @@
 
   @include respond(l-phone) {
     height: 80vh;
+  }
+
+  &__land {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+      url(../../assets/img/Header-banner.png);
+    height: 66vh;
+    padding: 0 $gen-padding;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include respond(big-desktop-min) {
+      padding: 0 $gen-padding-large;
+    }
+
+    @include respond(tab-land) {
+      height: 60vh;
+      padding: 0 $gen-padding-medium;
+    }
+
+    @include respond(l-phone2) {
+      height: 50vh;
+      padding: 0 $gen-padding-small;
+    }
   }
 
   &__container {
@@ -142,6 +169,126 @@
 
     @include respond(l-phone) {
       font-size: 2.2rem;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include respond(tab-land) {
+      width: 100%;
+    }
+  }
+
+  &__input {
+    position: relative;
+    width: 100%;
+  }
+
+  &__search {
+    width: 100%;
+    position: relative;
+
+    &__input {
+      width: 100%;
+      font-size: 2rem;
+      padding: 4% 6%;
+      border: none;
+
+      @include respond(l-phone2) {
+        padding: 4%;
+      }
+
+      &::placeholder {
+        color: #424242;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    &__button {
+      position: absolute;
+      top: 50%;
+      right: 4%;
+      transform: translate(4%, -50%);
+      display: flex;
+
+      &:hover > svg path {
+        stroke: $color-orange;
+      }
+    }
+
+    &__icon {
+      height: 2.4rem;
+      width: 2.4rem;
+    }
+  }
+
+  &__button {
+    display: flex;
+    padding: 8px 20px;
+    margin-top: 20px;
+    background: $color-orange;
+    align-items: center;
+
+    @include respond(tab-land) {
+      margin-top: 56px;
+      padding: 12px 24px;
+      font-size: 4.4rem;
+    }
+
+    @include respond(tab-port3) {
+      font-size: 3.2rem;
+    }
+
+    @include respond(l-phone2) {
+      font-size: 4rem;
+      justify-content: center;
+    }
+
+    @include respond(m-phone-m) {
+      width: 100%;
+      font-size: 2.8rem;
+    }
+
+    @include respond(sx-phone) {
+      margin-top: 32px;
+      font-size: 2.4rem;
+    }
+
+    &__icon {
+      margin-right: 6px;
+
+      @include respond(tab-land) {
+        height: 6rem;
+        width: 6rem;
+        margin-right: 16px;
+      }
+
+      @include respond(tab-port3) {
+        height: 4.8rem;
+        width: 4.8rem;
+        margin-right: 12px;
+      }
+
+      @include respond(l-phone2) {
+        margin-right: 16px;
+        height: 5.6rem;
+        width: 5.6rem;
+      }
+
+      @include respond(m-phone-m) {
+        height: 4.4rem;
+        width: 4.4rem;
+      }
+
+      @include respond(sx-phone) {
+        height: 3.6rem;
+        width: 3.6rem;
+        margin-right: 16px;
+      }
     }
   }
 }

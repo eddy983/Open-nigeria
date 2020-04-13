@@ -1,0 +1,247 @@
+.documents {
+  padding: 6% $gen-padding;
+
+  @include respond(big-desktop-min) {
+    padding: $land-top-padding $gen-padding-large;
+  }
+
+  @include respond(tab-land) {
+    padding: $land-top-padding $gen-padding-medium;
+  }
+
+  @include respond(l-phone2) {
+    padding: $land-top-padding-small $gen-padding-small;
+  }
+
+  &__search {
+    width: 100%;
+    position: relative;
+
+    &__input {
+      width: 100%;
+      font-size: 2.4rem;
+      padding: 2% 4%;
+      border: none;
+
+      @include respond(l-phone2) {
+        padding: 4%;
+      }
+
+      &::placeholder {
+        color: #424242;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    &__button {
+      position: absolute;
+      top: 50%;
+      right: 4%;
+      transform: translate(4%, -50%);
+      display: flex;
+      // align-items: center;
+
+      &:hover > svg path {
+        stroke: $color-orange;
+      }
+    }
+
+    &__icon {
+      height: 3.2rem;
+      width: 3.2rem;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin: 8% 0 0;
+
+    @include respond(l-phone2) {
+      @include fxd-c;
+    }
+  }
+
+  &__tabs {
+    @include tabs;
+    display: flex;
+    padding: 0.7%;
+    background: $color-white;
+    border: 1px solid #c5c9ce;
+    padding: 8px;
+
+    @include respond(l-phone2) {
+      width: 98%;
+      margin-bottom: 4%;
+    }
+  }
+
+  &__tab {
+    @include docs;
+    display: flex;
+    justify-content: center;
+    padding: 4% 0;
+  }
+
+  &__heading {
+    @include docs;
+
+    @include respond(l-phone2) {
+      width: 100%;
+      margin-bottom: 0.5%;
+    }
+  }
+
+  &__data {
+    display: flex;
+    margin-top: 3.5%;
+
+    @include respond(l-phone2) {
+      @include fxd-c;
+    }
+  }
+
+  &__sectors {
+    @include tabs;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__sector {
+    padding: 6% 8%;
+    background: $color-white;
+    display: flex;
+    align-items: center;
+    color: $color-grey;
+    font-weight: 800;
+
+    &:not(:last-child) {
+      margin-bottom: 2px;
+    }
+
+    &:hover {
+      background: $color-blue;
+      color: $color-white;
+    }
+
+    &:hover > svg path {
+      fill: $color-white;
+    }
+
+    @include respond(l-phone2) {
+      @include none;
+    }
+  }
+
+  &__icon {
+    margin-right: 6%;
+  }
+
+  &__documents {
+    @include docs;
+  }
+
+  &__empty {
+    @include flex;
+    @include jc-c;
+    margin-top: 24%;
+
+    @include respond(l-phone2) {
+      margin-top: 10%;
+    }
+  }
+
+  &__no-file {
+    @include flex-center;
+    flex-direction: column;
+  }
+
+  &__img {
+    width: 60%;
+
+    @include respond(l-phone2) {
+      width: 70%;
+    }
+  }
+
+  &__selects {
+    margin-top: 10%;
+
+    @include respond(l-phone2) {
+      margin-top: 2.5%;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 2%;
+    }
+
+    &__phone {
+      display: none;
+
+      @include respond(l-phone2) {
+        display: block;
+      }
+    }
+  }
+
+  &__select {
+    width: 100%;
+    height: 5.6rem;
+    color: #424242;
+    font-size: inherit;
+    border: none;
+  }
+
+  &__documents {
+    @include respond(l-phone2) {
+      margin-top: 10%;
+    }
+  }
+
+  &__document {
+    padding: 5%;
+    background: $color-white;
+
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+  }
+
+  &__formats {
+    margin-top: 4%;
+  }
+
+  &__format {
+    &:not(:last-child) {
+      margin-right: 1.6%;
+    }
+
+    @include respond(s-phone3) {
+      height: 4rem;
+      width: 4rem;
+    }
+  }
+}
+
+.on {
+  background: $color-blue;
+  color: $color-white;
+}
+
+.off {
+  color: $color-dark-blue;
+
+  &:hover {
+    background: rgba(37, 57, 146, 0.12);
+  }
+}
+
+.act {
+  background: $color-blue;
+  color: $color-white;
+}
+
+.act > svg path {
+  fill: $color-white;
+}

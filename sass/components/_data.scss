@@ -1,0 +1,51 @@
+.data {
+  padding: $land-top-padding $gen-padding;
+  background: #f2f2f2;
+
+  @include respond(big-desktop-min) {
+    padding: $land-top-padding $gen-padding-large;
+  }
+
+  @include respond(tab-land) {
+    padding: $land-top-padding $gen-padding-medium;
+  }
+
+  @include respond(l-phone2) {
+    padding: $land-top-padding-small $gen-padding-small;
+  }
+
+  &__charts {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -2%;
+
+    @include respond(l-phone2) {
+      margin: -4%;
+    }
+  }
+
+  &__container {
+    flex: 1 1 48.5%;
+    padding: 1.5%;
+
+    @include respond(l-phone2) {
+      flex: 1 1 100%;
+      padding: 4%;
+    }
+  }
+
+  &__chart {
+    @include flex-center;
+    height: 36.7rem;
+    background: $color-white;
+    padding: 8%;
+
+    @include respond(l-phone2) {
+      height: 44rem;
+    }
+
+    @include respond(s-phone) {
+      height: 30rem;
+    }
+  }
+}

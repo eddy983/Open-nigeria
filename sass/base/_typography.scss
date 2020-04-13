@@ -9,6 +9,14 @@ h1 {
   font: normal normal 4rem "poppins", sans-serif;
 }
 
+h2 {
+  font-size: 3.6rem;
+
+  @include respond(sx-phone) {
+    font-size: 3rem;
+  }
+}
+
 .header {
   &__main {
     color: $color-white;
@@ -27,8 +35,35 @@ h1 {
     }
   }
 
+  &__landing {
+    font-size: 3.6rem;
+    font-weight: 400;
+    color: $color-white;
+    margin-bottom: 20px;
+
+    @include respond(desktop) {
+      font-size: 5.8rem;
+    }
+
+    @include respond(tab-land) {
+      font-size: 5.2rem;
+    }
+
+    @include respond(l-phone2) {
+      font-size: 4.4rem;
+    }
+
+    @include respond(m-phone-m) {
+      font-size: 3.2rem;
+    }
+
+    @include respond(sx-phone) {
+      font-size: 2.4rem;
+    }
+  }
+
   &__sub-title {
-    color: #EBEBEB;;
+    color: #ebebeb;
     font-size: 2.6rem;
     letter-spacing: 1px;
     text-align: center;
@@ -250,7 +285,7 @@ h1 {
 
   &__text {
     font-size: 1.8rem;
-    
+
     @include respond(l-phone) {
       text-align: center;
       width: 100%;
@@ -260,5 +295,316 @@ h1 {
   &__sub {
     font-size: 1.6rem;
     margin-right: 3rem;
+  }
+}
+
+.news {
+  &--title {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 4%;
+  }
+
+  &--main {
+    font-weight: 900;
+    font-size: 3.6rem;
+    margin-bottom: 17%;
+  }
+}
+
+.search__text {
+  font-size: 1.8rem;
+  color: $color-white;
+  margin-bottom: 12px;
+
+  @include respond(l-phone2) {
+    @include center-align;
+  }
+}
+
+.datasets {
+  &--title {
+    color: #525960;
+    margin-bottom: 5%;
+
+    @include respond(l-phone2) {
+      @include center-align;
+    }
+  }
+
+  &--text {
+    color: $color-grey;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1.5px;
+
+    &:hover {
+      color: $color-black;
+    }
+
+    @include respond(tab-land) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.data {
+  &--title {
+    margin-bottom: 5%;
+
+    @include respond(l-phone2) {
+      margin-bottom: 12%;
+      @include center-align;
+    }
+  }
+}
+
+.documents {
+  &__selects__label {
+    font-size: 2.4rem;
+    color: $color-dark-blue;
+  }
+
+  &__topic {
+    font-size: 2rem;
+    font-weight: 800;
+    color: $color-blue;
+
+    @include respond(desktop) {
+      font-size: 1.8rem;
+    }
+
+    &:hover {
+      @include hover-link;
+    }
+  }
+
+  &__info {
+    font-size: 1.2rem;
+    margin-top: 6px;
+    color: $color-blue;
+  }
+
+  &__date {
+    color: #a8a8a8;
+  }
+
+  &__sub {
+    color: $color-dark-grey;
+    font-size: 1.8rem;
+    margin-top: 2.5%;
+
+    @include respond(desktop) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.about {
+  &--heading {
+    font-size: 3rem;
+    text-align: center;
+
+    @include respond(sx-phone) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &--ask {
+    font-size: 2.8rem;
+    margin-bottom: 2%;
+
+    @include respond(tab-land) {
+      font-size: 2rem;
+    }
+
+    @include respond(l-phone2) {
+      font-size: 3.4rem;
+    }
+
+    @include respond(sx-phone) {
+      font-size: 3rem;
+    }
+  }
+
+  &--what {
+    font-size: 1.8rem;
+    color: $color-grey;
+
+    @include respond(tab-land) {
+      @include none;
+    }
+
+    @include respond(l-phone2) {
+      display: block;
+      font-size: 2.8rem;
+    }
+
+    @include respond(sx-phone) {
+      font-size: 2.2rem;
+    }
+  }
+
+  &--form-title {
+    font-weight: bold;
+    font-size: 2.8rem;
+    color: $color-dark-blue;
+    margin-bottom: 2%;
+
+    @include respond(l-phone2) {
+      margin-bottom: 4%;
+    }
+  }
+
+  &__label {
+    font-size: 1.6rem;
+    color: $color-grey;
+    margin-bottom: 8px;
+
+    @include respond(l-phone2) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__info {
+    &__main {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    &__sub {
+      font-size: 1rem;
+    }
+  }
+}
+
+.inner {
+  &__heading {
+    padding: 7% $gen-padding 6%;
+    text-align: center;
+
+    @include respond(l-phone2) {
+      font-size: 3rem;
+    }
+  }
+
+  &__sub {
+    font-weight: 500;
+    margin: 0 0 1% 2%;
+
+    @include respond(tab-port3) {
+      @include none;
+    }
+  }
+
+  &__link {
+    color: $color-blue;
+
+    &:hover {
+      @include hover-link;
+    }
+
+    @include respond(l-phone2) {
+      font-size: 2.8rem;
+      overflow-wrap: break-word;
+      width: 100%;
+    }
+
+    @include respond(sx-phone) {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+.format {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+
+  @include respond(tab-port3) {
+    margin-bottom: 36px;
+  }
+}
+
+.view {
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+.dataset {
+  &--title {
+    font-weight: 800;
+    font-size: 1.4rem;
+
+    @include respond(big-desktop-min) {
+      font-size: 2.2rem;
+    }
+
+    @include respond(l-phone2) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &--sub {
+    font-size: 1.8rem;
+    color: $color-dark-grey;
+    margin-top: 2%;
+
+    @include respond(big-desktop-min) {
+      font-size: 2.8rem;
+    }
+
+    @include respond(l-phone2) {
+      font-size: 3rem;
+    }
+
+    @include respond(m-phone2) {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+.empty {
+  font-size: 5.6rem;
+  font-weight: 300;
+  margin-top: 20px;
+
+  @include respond(tab-land2) {
+    font-size: 4.2rem;
+  }
+
+  @include respond(m-phone4) {
+    font-size: 3.2rem;
+  }
+
+  @include respond(sx-phone) {
+    font-size: 2.4rem;
+  }
+}
+
+.describe {
+  color: $color-greyish-blue;
+
+  @include respond(l-phone2) {
+    font-size: 2rem;
+  }
+}
+
+.information {
+  color: $color-dark-blue;
+
+  @include respond(l-phone2) {
+    font-size: 2.8rem;
+  }
+
+  @include respond(m-phone2) {
+    font-size: 2.4rem;
+  }
+}
+
+.footer__text {
+  @include respond(l-phone2) {
+    margin: auto;
   }
 }

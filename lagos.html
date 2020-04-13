@@ -8,27 +8,30 @@
   <title>Open Nigeria States</title>
 
   <!-- css -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai+2:800|Poppins:400,500,600,700,800,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="assets/css/fonts.css">
   <link rel="stylesheet" href="assets/css/main.min.css">
 
   <!-- Font-Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- <style>
+  <style>
     :root {
-      --main-color-h: 299;
-      --main-color-s: 76%;
-      --main-color-l: 10%;
+      --main-color-h: 229;
+      --main-color-s: 60%;
+      --main-color-l: 36%;
     }
-  </style> -->
+  </style>
 </head>
 
 <body>
   <nav class="nav-bar nav-bar--trans" id="nav">
     <div class="nav-bar__main">
-      <a href="home.html">
-        <img src="assets/img/Logo-new.svg" alt="Logo" class="nav-bar__logo" />
+      <a href="lagos.html" class="nav-bar__con">
+        <img src="assets/img/setting_lagos-logo.png" alt="Logo" class="nav-bar__logo" />
+        Lagos State
       </a>
       <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
       <a href="javascript:void(0);" class="icon nav-bar__menu" onclick="myFunction()">
@@ -37,7 +40,7 @@
     </div>
     <div class="nav-bar__items" id="myLinks">
       <ul class="nav-bar__links">
-        <a href="home.html" class="nav-bar__link__link">
+        <a href="lagos.html" class="nav-bar__link__link">
           <li class="nav-bar__link">
             HOME
           </li>
@@ -45,11 +48,6 @@
         <a href="infographics.html" class="nav-bar__link__link">
           <li class="nav-bar__link">
             INFOGRAHPICS
-          </li>
-        </a>
-        <a href="interactive.html" class="nav-bar__link__link">
-          <li class="nav-bar__link">
-            INTERACTIVE
           </li>
         </a>
         <a href="capital-projects.html" class="nav-bar__link__link">
@@ -71,15 +69,24 @@
     </div>
   </nav>
 
-  <header class="header">
-    <div class="header__container">    
+  <header class="header" style="background: linear-gradient(
+    179.3deg,
+    var(--main-color-darker) -18.74%,
+    var(--main-color-dark-85) 73.76%,
+    rgba(218, 201, 200, 0) 143.25%
+  ),
+  url(../../assets/img/head-ban2.jpg), var(--main-color);
+  background-blend-mode: normal, luminosity, normal;
+  background-size: cover;
+  background-position: bottom;">
+    <div class="header__container">
       <div class="header__box">
         <p class="header__sub-title">
           OUR FUTURE IS IN NUMBERS
         </p>
         <h1 class="header__main">data to inform facts-based dialogue</h1>
       </div>
-      
+
     </div>
   </header>
 
@@ -94,7 +101,8 @@
           <div class="report__item">
             <p class="report__title">Proposed Budget</p>
             <p class="report__sub">
-              The government’s revenue generation and spending plan as prepared by MDAs and the budget office/ministry and as presented by the governor ...
+              The government’s revenue generation and spending plan as prepared by MDAs and the budget office/ministry
+              and as presented by the governor ...
             </p>
             <button onclick="window.location.href = 'proposed-budget.html'" class="btn btn__report">View Budget</button>
           </div>
@@ -106,7 +114,8 @@
           <div class="report__item">
             <p class="report__title">Approved Budget</p>
             <p class="report__sub">
-              This is the product of the State Assembly’s discussions on the executive budget proposal.  The assembly makes modifications... 
+              This is the product of the State Assembly’s discussions on the executive budget proposal. The assembly
+              makes modifications...
             </p>
             <button onclick="window.location.href = 'proposed-budget.html'" class="btn btn__report">View Budget</button>
           </div>
@@ -118,7 +127,8 @@
           <div class="report__item">
             <p class="report__title">Citizen Budget</p>
             <p class="report__sub">
-              A visual and simplified version of the approved budget produced with citizen’s understanding and engagement in mind.
+              A visual and simplified version of the approved budget produced with citizen’s understanding and
+              engagement in mind.
             </p>
             <button onclick="window.location.href = 'proposed-budget.html'" class="btn btn__report">View Budget</button>
           </div>
@@ -130,7 +140,8 @@
           <div class="report__item">
             <p class="report__title">Budget Implementation</p>
             <p class="report__sub">
-              Periodical reports detailing the progress made by the government in executing the projects and objectives outlined in the approved budget
+              Periodical reports detailing the progress made by the government in executing the projects and objectives
+              outlined in the approved budget
             </p>
             <button onclick="window.location.href = 'proposed-budget.html'" class="btn btn__report">View Budget</button>
           </div>
@@ -142,7 +153,8 @@
           <div class="report__item">
             <p class="report__title">Audited Statement</p>
             <p class="report__sub">
-              This contains the consolidated statement of actual state revenues and expenditure as well as the independent opinion of the state’s...
+              This contains the consolidated statement of actual state revenues and expenditure as well as the
+              independent opinion of the state’s...
             </p>
             <button onclick="window.location.href = 'proposed-budget.html'" class="btn btn__report">View Budget</button>
           </div>
@@ -154,7 +166,8 @@
           <div class="report__item">
             <p class="report__title">Policy Statement</p>
             <p class="report__sub">
-              Documents outlining policy directions and specifics of the state.  This can include the Medium Term Expenditure Framework, long term visioning...
+              Documents outlining policy directions and specifics of the state. This can include the Medium Term
+              Expenditure Framework, long term visioning...
             </p>
             <button onclick="window.location.href = 'proposed-budget.html'" class="btn btn__report">View Budget</button>
           </div>
