@@ -1,5 +1,6 @@
 .documents {
   padding: 6% $gen-padding;
+  background: #E0E8F3;
 
   @include respond(big-desktop-min) {
     padding: $land-top-padding $gen-padding-large;
