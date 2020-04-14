@@ -4,12 +4,13 @@
   padding: 3% 2.4%;
 
   &:focus {
-    border: 2px solid $color-blue;
+    border: 2px solid var(--main-color);
     outline: 0;
   }
 }
 .about {
   padding: $land-top-padding $gen-padding;
+  background: var(--main-color-10);
 
   @include respond(big-desktop-min) {
     padding: $land-top-padding $gen-padding-large;
@@ -155,6 +156,13 @@
         margin-right: 0;
         margin-bottom: 12%;
       }
+    }
+  }
+
+  &__icon {
+    @include respond(m-phone4) {
+      height: 6rem;
+      width: 6rem;
     }
   }
   

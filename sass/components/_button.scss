@@ -235,4 +235,25 @@
       font-size: 2rem;
     }
   }
+
+  &__submit {
+    background: var(--main-color);
+    text-align: center;
+    width: 20%;
+    padding: 1.5% 0;
+    font-size: 2rem;
+    margin-top: 2%;
+
+    @include respond(l-phone2) {
+      width: 100%;
+      margin-top: 8%;
+      padding: 4.5% 0;
+      font-size: 3rem;
+    }
+
+    &:hover {
+      color: $color-black;
+      background: var(--main-color-warm);
+    }
+  }
 }
