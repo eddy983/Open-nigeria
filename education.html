@@ -10,8 +10,7 @@
   <link rel="stylesheet" href="assets/css/main.min.css">
 
   <!-- FONTS -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@8p00&family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai+2:800|Poppins:400,500,600,700,800,900&display=swap"
     rel="stylesheet">
 
   <!-- Font-Awesome -->
@@ -20,24 +19,52 @@
 </head>
 
 <body>
-  <div class="nav-bar">
-    <div class="nav-bar__items">
-      <div class="nav-bar__main">
-        <a href="home.html" class="nav-bar__logo">
-          OPEN LAGOS
+  <nav class="nav-bar" id="nav">
+    <div class="nav-bar__main">
+      <a href="lagos.html" class="nav-bar__con">
+        <img src="assets/img/setting_lagos-logo.png" alt="Logo" class="nav-bar__logo" />
+        Lagos State
+      </a>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon nav-bar__menu" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="nav-bar__items" id="myLinks">
+      <ul class="nav-bar__links">
+        <a href="lagos.html" class="nav-bar__link__link">
+          <li class="nav-bar__link">
+            HOME
+          </li>
         </a>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon nav-bar__menu" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
+        <a href="infographics.html" class="nav-bar__link__link">
+          <li class="nav-bar__link">
+            INFOGRAHPICS
+          </li>
         </a>
-      </div>
-      <div class="nav-bar__links" id="myLinks">
-        <a href="documents.html" class="nav-bar__link">DATA</a>
-        <a href="about.html" class="nav-bar__link">CONTACT</a>
-        <a href="#" class="nav-bar__link">DEVELOPER</a>
+        <a href="contact(lagos).html" class="nav-bar__link__link">
+          <li class="nav-bar__link">
+            CONTACT
+          </li>
+        </a>
+        <a href="documents(lagos).html" class="nav-bar__link__link">
+          <li class="nav-bar__link">
+            CAPITAL PROJECTS
+          </li>
+        </a>
+      </ul>
+    </div>
+
+    <div class="search" id="search">
+      <input class="search__input" type="text"
+        placeholder="SEARCH FOR DOCUMENT (e.g KADUNA STATE PROPOSED BUDGET 2019 ">
+      <div class="search__btn">
+        <a href="#nav" class="search__link">
+          <p class="search__close">&otimes;</p>
+        </a>
       </div>
     </div>
-  </div>
+  </nav>
 
   <section class="documents">
     <div class="documents__search">
