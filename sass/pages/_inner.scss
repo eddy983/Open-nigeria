@@ -1,6 +1,8 @@
 .inner {
+  @include bg-color;
+
   &__container {
-    border-top: 3px solid $color-dark-blue;
+    border-top: 3px solid var(--main-color-dark);
     @include flex;
 
     @include respond(tab-port3) {
@@ -10,7 +12,7 @@
 
   &__formats {
     flex: 1 1 20%;
-    background: $color-dark-blue;
+    background: var(--main-color-dark);
   }
 
   &__format {
@@ -102,31 +104,31 @@
 }
 
 .clicked {
-  background: $color-dark-blue;
+  background: var(--main-color-dark);
 
   & > svg path {
     fill: $color-white;
   }
 
   &:hover {
-    background: $color-dark-blue;
+    background: var(--main-color-dark);
   }
 }
 
 .unclicked {
   background: $color-white;
-  border: 2px solid $color-dark-blue;
+  border: 2px solid var(--main-color-dark);
 
   & > svg path {
-    fill: $color-dark-blue;
+    fill: var(--main-color-dark);
   }
 
   &:hover {
     background: $color-white;
-    border: 2px solid $color-orange;
+    border: 2px solid var(--main-color-warm);
   }
 
   &:hover > svg path {
-    fill: $color-orange;
+    fill: var(--main-color-warm);
   }
 }

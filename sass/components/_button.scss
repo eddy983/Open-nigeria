@@ -10,7 +10,7 @@
 
   &:hover {
     color: $color-white;
-    background: transparent;
+    background: var(--main-color-warm);
     outline: 3px solid $color-white;
   }
 
@@ -254,6 +254,88 @@
     &:hover {
       color: $color-black;
       background: var(--main-color-warm);
+    }
+  }
+
+  &__format {
+    padding: 6% 16%;
+    margin-top: 4%;
+    font-size: 1.4rem;
+
+    @include respond(tab-port3) {
+      font-size: 1.6rem;
+      padding: 4% 10%;
+    }
+
+    &__csv {
+      background: #2f9171;
+    }
+
+    &__xml {
+      background: #83629a;
+    }
+
+    &__pdf {
+      background: #b53438;
+    }
+
+    &__doc {
+      background: #2c81e4;
+    }
+
+    &__zip {
+      background: #859594;
+    }
+  }
+
+  &__view {
+    @include flex-center;
+    height: 5.2rem;
+    border-radius: 100px;
+    width: 5.2rem;
+    margin-right: 8px;
+    margin-top: 0;
+    padding: 0;
+
+    @include respond(m-phone-m) {
+      height: 7.2rem;
+      width: 7.2rem;
+    }
+  }
+
+  &__embed {
+    @include flex;
+    @include ai-c;
+    font-size: 1.4rem;
+    padding: 0 3%;
+    font-weight: 800;
+    color: $color-white;
+
+    &:not(:last-child) {
+      margin-right: 3%;
+    }
+
+    &:hover {
+      color: $color-black;
+    }
+
+    &:hover > svg path {
+      fill: $color-black;
+    }
+
+    @include respond(m-phone-m) {
+      padding: 6% 0;
+      display: flex;
+      justify-content: center;
+      margin-top: 8%;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+
+      &:last-child {
+        margin-top: 4%;
+      }
     }
   }
 }

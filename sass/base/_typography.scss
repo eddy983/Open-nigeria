@@ -17,6 +17,19 @@ h2 {
   }
 }
 
+h3 {
+  font-size: 3.2rem;
+  font-weight: normal;
+
+  @include respond(l-phone2) {
+    font-size: 4rem;
+  }
+
+  @include respond(sx-phone) {
+    font-size: 3rem;
+  }
+}
+
 .header {
   &__main {
     color: $color-white;
@@ -509,7 +522,7 @@ h2 {
   }
 
   &__link {
-    color: $color-blue;
+    color: var(--main-color);
 
     &:hover {
       @include hover-link;
@@ -602,7 +615,7 @@ h2 {
 }
 
 .information {
-  color: $color-dark-blue;
+  color: var(--main-color-dark);
 
   @include respond(l-phone2) {
     font-size: 2.8rem;

@@ -334,3 +334,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   color: var(--main-color-warm);
 }
 
+@mixin bg-color {
+  background: var(--main-color-10);
+}
