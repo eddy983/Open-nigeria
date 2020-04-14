@@ -1,6 +1,6 @@
 .documents {
   padding: 6% $gen-padding;
-  background: #E0E8F3;
+  background: var(--main-color-10);
 
   @include respond(big-desktop-min) {
     padding: $land-top-padding $gen-padding-large;
@@ -24,6 +24,10 @@
       padding: 2% 4%;
       border: none;
 
+      &:focus {
+        outline: var(--main-color-4) auto 5px;
+      }
+
       @include respond(l-phone2) {
         padding: 4%;
       }
@@ -44,7 +48,7 @@
       // align-items: center;
 
       &:hover > svg path {
-        stroke: $color-orange;
+        stroke: var(--main-color-warm);
       }
     }
 
@@ -122,7 +126,7 @@
     }
 
     &:hover {
-      background: $color-blue;
+      background: var(--main-color-dark);
       color: $color-white;
     }
 
@@ -226,15 +230,15 @@
 }
 
 .on {
-  background: $color-blue;
+  background: var(--main-color-dark);
   color: $color-white;
 }
 
 .off {
-  color: $color-dark-blue;
+  color: var(--main-color-dark);
 
   &:hover {
-    background: rgba(37, 57, 146, 0.12);
+    background: var(--main-color-20);
   }
 }
 

@@ -11,7 +11,7 @@ tooltipModal.style.display = "none";
 
 
 //! WHERE THE HOST LINK WAS ADD
-function getHost(){
+function getHost() {
     const host = window.location.hostname;
     return host.includes('localhost') ? 'http://localhost:8000' : 'http://' + window.location.hostname
 }
@@ -36,7 +36,7 @@ countries.forEach(element => {
     });
 
     //! WHERE THE LINK WAS TARGETED TO ON CLICK
-    element.addEventListener("click", (e) => { 
+    element.addEventListener("click", (e) => {
         window.location.href = getHost() + "/state/" + e.target.id
     })
 });

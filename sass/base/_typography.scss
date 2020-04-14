@@ -361,15 +361,25 @@ h2 {
 }
 
 .documents {
+  &--title {
+    font-size: 3.2rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+
+    @include respond(sx-phone) {
+      font-size: 3rem;
+    }
+  }
+
   &__selects__label {
     font-size: 2.4rem;
-    color: $color-dark-blue;
+    color: var(--main-color-low);
   }
 
   &__topic {
     font-size: 2rem;
     font-weight: 800;
-    color: $color-blue;
+    color: var(--main-color-dark);
 
     @include respond(desktop) {
       font-size: 1.8rem;
@@ -383,7 +393,7 @@ h2 {
   &__info {
     font-size: 1.2rem;
     margin-top: 6px;
-    color: $color-blue;
+    color: var(--main-color-dark);
   }
 
   &__date {

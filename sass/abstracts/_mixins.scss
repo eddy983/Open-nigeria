@@ -330,7 +330,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 @mixin hover-link {
-  text-decoration: underline;
-  color: $color-orange;
+  text-decoration: underline !important;
+  color: var(--main-color-warm);
 }
 
