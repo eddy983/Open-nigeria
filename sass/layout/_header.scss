@@ -1,21 +1,6 @@
 .header {
   position: relative;
   height: 95vh;
-  // background: linear-gradient(
-  //     0deg,
-  //     var(--main-color-dark-85),
-  //     var(--main-color-dark-85)
-  //   ),
-  //   url(../../assets/img/third-mainland-bridge-lagos.jpg) center/cover no-repeat;
-
-  // background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-  //   linear-gradient(
-  //     179.3deg,
-  //     #614342 -18.74%,
-  //     rgba(73, 51, 50, 0.76) 73.76%,
-  //     rgba(218, 201, 200, 0) 143.25%
-  //   ),
-  //   url(../../assets/img/head-ban.jpeg), #996b69;
 
   background: linear-gradient(
       179.3deg,
@@ -176,6 +161,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 
     @include respond(tab-land) {
       width: 100%;
@@ -184,21 +170,37 @@
 
   &__input {
     position: relative;
-    width: 100%;
+    // width: 100%;
+    @include respond(tab-land) {
+      width: 100%;
+    }
   }
 
   &__search {
-    width: 100%;
     position: relative;
 
     &__input {
-      width: 100%;
+      width: 55.3rem;
       font-size: 2rem;
-      padding: 4% 6%;
+      padding: 2% 4%;
       border: none;
+      transition: all 0.4s ease-in-out;
+
+      @include respond(tab-land) {
+        width: 100%;
+      }
 
       @include respond(l-phone2) {
         padding: 4%;
+      }
+
+      &:focus {
+        transform: scaleX(1.1);
+      }
+
+      &:focus ~ .header__search__button {
+        right: 0%;
+        transform: translate(0%, -50%);
       }
 
       &::placeholder {
