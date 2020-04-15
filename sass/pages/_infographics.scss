@@ -1,14 +1,15 @@
 .infographics {
   @include gen-section;
-
-  padding: 0 $gen-padding;
+  @include bg-color;
+  margin-top: 0;
+  padding: 8% $gen-padding 0;
 
   @include respond(big-desktop-min) {
-    padding: 0 $gen-padding-large;
+    padding: 8% $gen-padding-large 0;
   }
 
   @include respond(l-phone) {
-    padding: 0 $gen-padding-small;
+    padding: 8% $gen-padding-small 0;
   }
 
   &__cards {

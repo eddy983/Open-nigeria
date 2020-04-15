@@ -71,3 +71,8 @@
     display: none;
   }
 }
+
+//BACKGROUND
+.bg-color {
+  @include bg-color;
+}
