@@ -150,11 +150,11 @@
     }
   }
 
-  &__view {
+  &__lga {
     @extend .btn__feedback;
     background: $color-white;
-
     color: var(--main-color-darker);
+
 
     @include respond(l-phone) {
       margin-top: 6%;
