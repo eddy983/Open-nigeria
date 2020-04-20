@@ -338,7 +338,7 @@ h3 {
 .datasets {
   &--title {
     color: #525960;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 
     @include respond(l-phone2) {
       @include center-align;
@@ -364,7 +364,7 @@ h3 {
 
 .data {
   &--title {
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 
     @include respond(l-phone2) {
       margin-bottom: 12%;
