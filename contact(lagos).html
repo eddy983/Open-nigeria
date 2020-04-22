@@ -16,6 +16,8 @@
   <!-- Font-Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+
   <!-- COLOR THEME -->
   <style>
     :root {
@@ -75,12 +77,12 @@
     </div>
   </nav>
 
-  <section class="about">
-    <h3 class="about--heading">Do you have questions or feedback for Open Lagos? Please let us know</h3>
+  <section class="contact">
+    <h3 class="contact--heading">Do you have questions or feedback for Open Lagos? Please let us know</h3>
 
-    <div class="about__cards">
-      <div class="about__card">
-        <div class="about__circle">
+    <div class="contact__cards">
+      <div class="contact__card">
+        <div class="contact__circle">
           <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M48 32.4844C48 26.528 44.5829 21.212 39.4651 18.6262C39.3062 30.0469 30.0469 39.3062 18.6262 39.4651C21.212 44.5829 26.528 48 32.4844 48C35.2771 48 37.9929 47.2562 40.3792 45.843L47.9323 47.9323L45.843 40.3792C47.2562 37.9929 48 35.2771 48 32.4844Z"
@@ -90,11 +92,11 @@
               fill="var(--main-color)" />
           </svg>
         </div>
-        <p class="about--ask">Ask a question</p>
-        <p class="about--what">We would love to here from</p>
+        <p class="contact--ask">Ask a question</p>
+        <p class="contact--what">We would love to here from</p>
       </div>
-      <div class="about__card">
-        <div class="about__circle">
+      <div class="contact__card">
+        <div class="contact__circle">
           <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0)">
               <path
@@ -117,61 +119,68 @@
             </defs>
           </svg>
         </div>
-        <p class="about--ask">Request for data</p>
-        <p class="about--what">Suggest other datasets</p>
+        <p class="contact--ask">Request for data</p>
+        <p class="contact--what">Suggest other datasets</p>
       </div>
-      <div class="about__card">
-        <div class="about__circle">
+      <div class="contact__card">
+        <div class="contact__circle">
           <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M47.5625 39.8067C47.5625 39.8067 47.5625 39.8067 47.5615 39.8057C44.3661 33.251 39.0094 23.9541 34.2836 15.752C31.8109 11.459 29.4748 7.40534 27.7863 4.32425C26.9894 2.86916 25.5733 2 23.999 2C22.4246 2 21.0086 2.86916 20.2118 4.32425C18.5222 7.40722 16.1852 11.4649 13.7095 15.7608C8.98669 23.9609 3.63197 33.2539 0.437531 39.8067C0.147469 40.4034 0 41.0352 0 41.6827C0 44.0636 1.92291 46.0001 4.28728 46.0001L24 45.9981L43.7127 46.0001C46.0771 46.0001 48 44.0636 48 41.6827C48 41.0352 47.8525 40.4034 47.5625 39.8067ZM24 42.001C22.8975 42.001 22 41.1035 22 40.001C22 38.8985 22.8975 38.001 24 38.001C25.1025 38.001 26 38.8985 26 40.001C26 41.1035 25.1025 42.001 24 42.001ZM26 35.001C26 35.5538 25.5527 36.0011 24.9999 36.0011H23C22.4472 36.0011 21.9999 35.5538 21.9999 35.001V13.001C21.9999 12.4482 22.4472 12.001 23 12.001H24.9999C25.5527 12.001 26 12.4482 26 13.001V35.001Z"
               fill="var(--main-color)" />
           </svg>
         </div>
-        <p class="about--ask">Report a problem</p>
-        <p class="about--what">State your complains</p>
+        <p class="contact--ask">Report a problem</p>
+        <p class="contact--what">State your complains</p>
       </div>
     </div>
 
-    <div class="about__container" id="form">
-      <p class="about--form-title">Contact us with this form</p>
-      <form class="about__form">
-        <div class="about__items">
-          <div class="about__item">
-            <label class="about__label" for="name">Name</label>
-            <input class="about__input" type="text" name="name" id="name">
+    <div class="contact__container" id="form">
+      <p class="contact--form-title">Contact us with this form</p>
+      <form class="contact__form">
+        <div class="contact__items">
+          <div class="contact__item">
+            <label class="contact__label" for="name">Name</label>
+            <input class="contact__input" type="text" name="name" id="name">
           </div>
-          <div class="about__item">
-            <label class="about__label" for="name">Email Address</label>
-            <input class="about__input" type="email" name="email" id="email">
+          <div class="contact__item">
+            <label class="contact__label" for="name">Email Address</label>
+            <input class="contact__input" type="email" name="email" id="email">
           </div>
-          <div class="about__item">
-            <label class="about__label" for="name">Subject</label>
-            <input class="about__input" type="text" name="subject" id="subject">
+          <div class="contact__item">
+            <label class="contact__label" for="name">Subject</label>
+            <input class="contact__input" type="text" name="subject" id="subject">
           </div>
-          <div class="about__item">
-            <label class="about__label" for="name">Reasons</label>
-            <select class="about__input" type="text" name="name" id="name">
+          <div class="contact__item">
+            <label class="contact__label" for="name">Reasons</label>
+            <select class="contact__input" type="text" name="name" id="name">
               <option value="select">Questions of Open lagos.ng</option>
-              <option value="problem">Report problem with the website</option>
               <option value="dataset">Request dataset</option>
-              <option value="new">Request new website</option>
-              <option value="application">Submit an application</option>
+              <option value="concern">Rise concern contact a project in your community</option>
+              <option value="story">Tell a story</option>
               <option value="others">Others</option>
             </select>
           </div>
         </div>
-        <div class="about__field">
-          <label class="about__label" for="name">How can we help?</label>
-          <textarea class="about__textarea" name="Help" id="Help" cols="30" rows="10"></textarea>
+        <div class="contact__field">
+          <label class="contact__label" for="name">How can we help?</label>
+          <textarea class="contact__textarea" name="Help" id="Help" cols="30" rows="10"></textarea>
+        </div>
+        <div class="contact__item file-upload">
+          <label class="contact__label" for="upload">Upload Image or Video (Optional)</label>
+          <div class="contact__upload">
+            <input class="contact__input custom-file-input" type="file" name="chooseFile" id="chooseFile" value="fuck">
+            <div class="file-select-name" id="noFile">No file chosen...</div>
+          </div>
         </div>
         <a class="btn btn__submit" href="#">Submit</a>
       </form>
     </div>
 
-    <div class="about__infos">
-      <div class="about__info">
-        <svg class="about__icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="contact__infos">
+      <div class="contact__info">
+        <svg class="contact__icon" width="80" height="80" viewBox="0 0 80 80" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
           <path
             d="M73.1764 56.0895C72.0416 55.4662 70.6167 55.8807 69.9938 57.0151C69.3705 58.1496 69.7848 59.5746 70.9194 60.1978C73.7113 61.7315 75.3125 63.4318 75.3125 64.8628C75.3125 66.6129 72.8328 69.3254 65.873 71.6899C58.9972 74.0262 49.8086 75.3126 40 75.3126C30.1914 75.3126 21.0028 74.0262 14.127 71.6899C7.16719 69.3256 4.6875 66.6129 4.6875 64.8628C4.6875 63.4318 6.28875 61.7315 9.08063 60.1976C10.2152 59.5745 10.6295 58.1495 10.0063 57.0149C9.38297 55.8806 7.95844 55.466 6.82359 56.0893C3.71078 57.7995 0 60.7098 0 64.8628C0 68.0462 2.18938 72.5849 12.6191 76.1284C19.9678 78.6251 29.6919 80.0001 40 80.0001C50.3081 80.0001 60.0322 78.6251 67.3809 76.1284C77.8106 72.5849 80 68.0462 80 64.8628C80 60.7098 76.2892 57.7995 73.1764 56.0895Z"
             fill="var(--main-color)" />
@@ -182,13 +191,14 @@
             d="M39.9999 61.0366C42.0863 61.0366 43.9815 59.9734 45.0699 58.1927C52.6965 45.715 61.7874 29.2703 61.7874 21.7873C61.7874 9.77375 52.0137 0 39.9999 0C27.9862 0 18.2124 9.77375 18.2124 21.7873C18.2124 29.2703 27.3035 45.715 34.9299 58.1927C36.0183 59.9734 37.9137 61.0366 39.9999 61.0366ZM31.2426 20.2914C31.2426 15.4628 35.1712 11.5344 39.9999 11.5344C44.8287 11.5344 48.7572 15.4628 48.7572 20.2914C48.7572 25.1202 44.8287 29.0486 39.9999 29.0486C35.1712 29.0486 31.2426 25.1203 31.2426 20.2914Z"
             fill="var(--main-color)" />
         </svg>
-        <div class="about__texts">
-          <p class="about__info__main">Location:</p>
-          <p class="about__info__sub">BudgIT 55 Moleye Street, Alagomeji , Lagos</p>
+        <div class="contact__texts">
+          <p class="contact__info__main">Location:</p>
+          <p class="contact__info__sub">BudgIT 55 Moleye Street, Alagomeji , Lagos</p>
         </div>
       </div>
-      <div class="about__info">
-        <svg class="about__icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="contact__info">
+        <svg class="contact__icon" width="80" height="80" viewBox="0 0 80 80" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
           <path
             d="M42.6667 21.3335C41.1947 21.3335 40 22.5282 40 24.0002C40 25.4722 41.1947 26.6668 42.6667 26.6668C48.5493 26.6668 53.3333 31.4508 53.3333 37.3335C53.3333 38.8055 54.528 40.0002 56 40.0002C57.472 40.0002 58.6667 38.8055 58.6667 37.3335C58.6667 28.5122 51.488 21.3335 42.6667 21.3335Z"
             fill="var(--main-color)" />
@@ -202,13 +212,14 @@
             d="M72 58.6668C64.256 58.6668 56.88 56.9815 50.08 53.6588C49.44 53.3388 48.704 53.3015 48.0373 53.5362C47.3653 53.7708 46.816 54.2615 46.5067 54.8962L42.3147 63.5735C31.4667 57.5202 22.4853 48.5442 16.4373 37.6962L25.1093 33.4935C25.7493 33.1842 26.2347 32.6348 26.4693 31.9628C26.6987 31.2962 26.656 30.5602 26.3413 29.9202C23.0187 23.1202 21.3333 15.7442 21.3333 8.00016C21.3333 6.52816 20.1387 5.3335 18.6667 5.3335H2.66667C1.19467 5.3335 0 6.52816 0 8.00016C0 47.7015 32.2987 80.0002 72 80.0002C73.472 80.0002 74.6667 78.8055 74.6667 77.3335V61.3335C74.6667 59.8615 73.472 58.6668 72 58.6668Z"
             fill="var(--main-color)" />
         </svg>
-        <div class="about__texts">
-          <p class="about__info__main">Phone:</p>
-          <p class="about__info__sub">+2349083331633, +2348037276668</p>
+        <div class="contact__texts">
+          <p class="contact__info__main">Phone:</p>
+          <p class="contact__info__sub">+2349083331633, +2348037276668</p>
         </div>
       </div>
-      <div class="about__info">
-        <svg class="about__icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="contact__info">
+        <svg class="contact__icon" width="80" height="80" viewBox="0 0 80 80" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
           <path d="M0 15.1235V66.0502L23.0767 35.8735L0 15.1235Z" fill="var(--main-color)" />
           <path d="M56.9231 35.8706L79.9998 66.0506V15.124L56.9231 35.8706Z" fill="var(--main-color)" />
           <path d="M43.9253 38.5933L75.7285 10H4.27197L36.0587 38.58C38.312 40.6267 41.6885 40.6267 43.9253 38.5933Z"
@@ -217,9 +228,9 @@
             d="M48.3951 43.5367C46.0084 45.71 43.0084 46.7967 40.0051 46.7967C36.9984 46.7967 33.9884 45.7067 31.5884 43.5234L28.0517 40.3434L5.37183 70H74.6285L51.9484 40.3433L48.3951 43.5367Z"
             fill="var(--main-color)" />
         </svg>
-        <div class="about__texts">
-          <p class="about__info__main">Email::</p>
-          <p class="about__info__sub">info@yourbudgit.com</p>
+        <div class="contact__texts">
+          <p class="contact__info__main">Email::</p>
+          <p class="contact__info__sub">info@yourbudgit.com</p>
         </div>
       </div>
     </div>
@@ -249,6 +260,20 @@
       x.style.display = "flex";
     }
   }
+</script>
+
+<script>
+  $('#chooseFile').bind('change', function () {
+    var filename = $("#chooseFile").val();
+    if (/^\s*$/.test(filename)) {
+      $(".contact__upload").removeClass('active');
+      $("#noFile").text("No file chosen...");
+    }
+    else {
+      $(".contact__upload").addClass('active');
+      $("#noFile").text(filename.replace("C:\\fakepath\\", ""));
+    }
+  });
 </script>
 
 </html>

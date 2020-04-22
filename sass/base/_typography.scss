@@ -424,7 +424,7 @@ h3 {
   }
 }
 
-.about {
+.contact {
   &--heading {
     font-size: 3rem;
     text-align: center;
@@ -623,6 +623,25 @@ h3 {
 
   @include respond(m-phone2) {
     font-size: 2.4rem;
+  }
+}
+
+.file-select-name {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(0%, -50%);
+
+  @include respond(tab-port3) {
+    left: 28%;
+  }
+
+  @include respond(m-phone2) {
+    left: 36%;
+  }
+
+  @include respond(sx-phone) {
+    left: 40%;
   }
 }
 
