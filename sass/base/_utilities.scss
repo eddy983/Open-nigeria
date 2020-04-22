@@ -35,6 +35,10 @@
   }
 }
 
+.ml-8p {
+  margin-left: 8%;
+}
+
 // FILL COLOR
 .fill {
   fill: var(--main-color);
@@ -76,3 +80,10 @@
 .bg-color {
   @include bg-color;
 }
+
+//FONT-WEIGHT
+.bold {
+  font-weight: bold;
+}
+
+

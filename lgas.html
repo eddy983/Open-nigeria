@@ -32,11 +32,18 @@
     </div>
     <div class="nav-bar__items" id="myLinks">
       <ul class="nav-bar__links">
-        <a href="lagos.html" class="nav-bar__link__link">
-          <li class="nav-bar__link">
-            HOME
-          </li>
-        </a>
+        <li class="nav-bar__link tab-port">
+          <div class="dropdown">
+            <button class="dropbtn" onclick="myDown()">STATE
+              <i class="ml-8p fa fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="anamabra.html">Anamabra State</a>
+              <a href="lagos.html">Lagos State</a>
+              <a href="#">Edo State</a>
+            </div>
+          </div>
+        </li>
         <a href="infographics.html" class="nav-bar__link__link">
           <li class="nav-bar__link">
             INFOGRAHPICS
@@ -982,16 +989,6 @@
 
 </body>
 
-<script>
-  /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-  function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "flex") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "flex";
-    }
-  }
-</script>
+<script src="assets/js/main.js"></script>
 
 </html>

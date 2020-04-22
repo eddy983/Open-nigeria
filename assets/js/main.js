@@ -223,34 +223,78 @@ window.onclick = function (e) {
 
 
 
-// FOR THE DROPDOWNS
-
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+//? FOR NAVIGATION
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "flex") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "flex";
+    }
+}
+
+//? FOR UPLOAD FEATURE
+$('#chooseFile').bind('change', function () {
+    var filename = $("#chooseFile").val();
+    if (/^\s*$/.test(filename)) {
+        $(".contact__upload").removeClass('active');
+        $("#noFile").text("No file chosen...");
+    }
+    else {
+        $(".contact__upload").addClass('active');
+        $("#noFile").text(filename.replace("C:\\fakepath\\", ""));
+    }
+});
+
+//? FOR NAV-BAR DROPDOWN
+/* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+function myDown() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function (e) {
-    if (!e.target.matches(".filter__btn")) {
+    if (!e.target.matches('.dropbtn')) {
         var myDropdown = document.getElementById("myDropdown");
-        if (myDropdown.classList.contains("show")) {
-            myDropdown.classList.remove("show");
+        if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
         }
     }
-};
-
-function myFunction2() {
-    document.getElementById("myDropdown2").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function (e) {
-    if (!e.target.matches(".filter__btn2")) {
-        var myDropdown = document.getElementById("myDropdown2");
-        if (myDropdown.classList.contains("show")) {
-            myDropdown.classList.remove("show");
-        }
-    }
-};
+
+
+
+//? FOR THE DROPDOWNS
+
+// /* When the user clicks on the button, 
+// toggle between hiding and showing the dropdown content */
+// function myFunction() {
+//     document.getElementById("myDropdown").classList.toggle("show");
+// }
+
+// // Close the dropdown if the user clicks outside of it
+// window.onclick = function (e) {
+//     if (!e.target.matches(".filter__btn")) {
+//         var myDropdown = document.getElementById("myDropdown");
+//         if (myDropdown.classList.contains("show")) {
+//             myDropdown.classList.remove("show");
+//         }
+//     }
+// };
+
+// function myFunction2() {
+//     document.getElementById("myDropdown2").classList.toggle("show");
+// }
+
+// // Close the dropdown if the user clicks outside of it
+// window.onclick = function (e) {
+//     if (!e.target.matches(".filter__btn2")) {
+//         var myDropdown = document.getElementById("myDropdown2");
+//         if (myDropdown.classList.contains("show")) {
+//             myDropdown.classList.remove("show");
+//         }
+//     }
+// };
