@@ -48,6 +48,36 @@
     }
   }
 
+  &__about {
+    background: linear-gradient(
+        0deg,
+        rgba(3, 25, 38, 0.5),
+        rgba(3, 25, 38, 0.5)
+      ),
+      url(../../assets/img/About-banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 54vh;
+    background-position: 0 56%;
+
+    @include respond(tab-land) {
+      height: 36vh;
+    }
+
+    @include respond(m-phone2) {
+      height: 28vh;
+    }
+  }
+
+  &__about-text {
+    @include position;
+    text-align: center;
+
+    @include respond(tab-land) {
+      width: 100%;
+    }
+  }
+
   &__container {
     position: absolute;
     top: 50%;
