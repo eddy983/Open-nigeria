@@ -21,6 +21,7 @@
   --main-color-hsl: var(--main-color-h), var(--main-color-s), var(--main-color-l);
 
   --main-color: hsl(var(--main-color-hsl));
+  --main-color-0: hsla(var(--main-color-hsl), 0);
   --main-color-4: hsla(var(--main-color-hsl), .04);
   --main-color-8: hsla(var(--main-color-hsl), .08);
   --main-color-10: hsla(var(--main-color-hsl), .1);
@@ -51,6 +52,9 @@
   --main-color-dark: hsl(var(--main-color-h), var(--main-color-s), calc(var(--main-color-l) * .9));
   --main-color-darker: hsl(var(--main-color-h), var(--main-color-s), calc(var(--main-color-l) * .7));
   --main-color-dark-85: hsla(var(--main-color-h), var(--main-color-s), calc(var(--main-color-l) * .3), .85);
+  --main-color-dark-8: hsla(var(--main-color-h), var(--main-color-s), calc(var(--main-color-l) * .3), .8);
+  --main-color-dark-7: hsla(var(--main-color-h), var(--main-color-s), calc(var(--main-color-l) * .3), .7);
+  --main-color-dark-75: hsla(var(--main-color-h), var(--main-color-s), calc(var(--main-color-l) * .3), .75);
   --main-color-dark-6: hsla(var(--main-color-h), var(--main-color-s), calc(var(--main-color-l) * .3), .6);
   --main-color-dark-90: hsla(var(--main-color-h), var(--main-color-s), calc(var(--main-color-l) * .3), .90);
 }

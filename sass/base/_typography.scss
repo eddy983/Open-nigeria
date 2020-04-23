@@ -175,10 +175,30 @@ h3 {
   }
 
   &__sub {
+    position: relative;
     margin-top: 0.5rem;
     font-size: 1.4rem;
     color: #3a3939;
     letter-spacing: 1px;
+    display: block; /* or inline-block */
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    max-height: 7.2em;
+    line-height: 1.8em;
+
+    @include respond(big-desktop-min) {
+      -webkit-line-clamp: 3;
+    }
+
+    @include respond(tab-port2) {
+      -webkit-line-clamp: 3;
+    }
   }
 }
 

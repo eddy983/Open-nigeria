@@ -5,7 +5,7 @@
   background: linear-gradient(
       179.3deg,
       var(--main-color-darker) -18.74%,
-      var(--main-color-dark-85) 73.76%,
+      var(--main-color-dark-75) 73.76%,
       rgba(218, 201, 200, 0) 143.25%
     ),
     url(../../assets/img/head-ban2.jpg), var(--main-color);
@@ -23,7 +23,7 @@
 
   &__land {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
-      url(../../assets/img/Header-banner.png);
+      url(../../assets/img/About-banner.png);
     height: 66vh;
     padding: 0 $gen-padding;
     display: flex;
