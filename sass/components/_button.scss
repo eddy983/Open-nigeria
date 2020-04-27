@@ -11,7 +11,6 @@
   &:hover {
     color: $color-white;
     background: var(--main-color-warm);
-    outline: 3px solid $color-white;
   }
 
   &__map {
@@ -76,6 +75,42 @@
     }
   }
 
+  &__nav {
+    // padding: 0.8% 2%;
+    padding: 8px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+    &--white {
+      color: $color-black;
+      background: $color-white;
+    }
+
+    &--black {
+      color: $color-white;
+      background: $color-black;
+    }
+
+    @include respond(tab-port3) {
+      padding: 7% 0 7% 10%;
+      border-bottom: 0.25px solid #111704eb;
+      background: #e6e6e6;
+      width: 100%;
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: $color-black;
+    }
+
+    @include respond(l-phone) {
+      padding: 9% 0 9% 10%;
+    }
+
+    &:hover {
+      color: $color-white;
+      background: var(--main-color);
+    }
+  }
+
   &__header {
     padding: 1rem 2.8rem;
     background: $color-white;
@@ -118,11 +153,11 @@
       background: var(--main-color-darker);
     }
 
-    @include respond (tab-land) {
+    @include respond(tab-land) {
       font-size: 2.6rem;
     }
 
-    @include respond (tab-port) {
+    @include respond(tab-port) {
       font-size: 2.2rem;
     }
 
@@ -155,7 +190,6 @@
     background: $color-white;
     color: var(--main-color-darker);
 
-
     @include respond(l-phone) {
       margin-top: 6%;
       font-size: 2.4rem;
@@ -169,6 +203,10 @@
       font-size: 1.4rem;
     }
 
+    &:hover {
+      outline: 3px solid $color-white;
+      background: transparent;
+    }
   }
 
   &__send {
@@ -213,7 +251,6 @@
     width: 25%;
     font-size: 2.2rem;
 
-
     @include respond(l-phone) {
       padding: 1.4rem 0;
       width: 100%;
@@ -226,6 +263,11 @@
     padding: 1rem 2rem 1rem 0;
     background: $color-white;
     margin-top: 6%;
+
+    &:hover {
+      outline: 3px solid $color-white;
+      background: transparent;
+    }
 
     @include respond(l-phone) {
       font-size: 2.2rem;

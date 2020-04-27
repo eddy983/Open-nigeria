@@ -95,6 +95,17 @@
 
   &__items {
     transition: all 0.3s;
+    @include flex;
+    @include ai-c;
+    @include jc-sb;
+    width: 66%;
+
+    @include respond(tab-land) {
+      width: 70%;
+    }
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
 
     @include respond(tab-port3) {
       margin-top: 2.5rem;
@@ -145,11 +156,13 @@
     }
 
     @include respond(tab-port3) {
+      color: $color-black;
       padding: 7% 0 7% 10%;
       border-bottom: 0.25px solid #111704eb;
       background: #e6e6e6;
       width: 100%;
     }
+
     @include respond(l-phone) {
       padding: 9% 0 9% 10%;
     }
