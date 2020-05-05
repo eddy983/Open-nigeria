@@ -60,7 +60,7 @@
     box-shadow: 0px 0px 15px var(--main-color-10);
     position: relative;
     height: 43.5rem;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 
     @include respond(tab-land) {
       height: 56.5rem;
@@ -79,9 +79,12 @@
     }
 
     &__inner {
+      @include flex;
+      @include fxd-c;
       padding: 6%;
       background: $color-white;
-      // height: 30rem;
+      height: 57%;
+      align-items: baseline;
     }
 
     &__sub {
