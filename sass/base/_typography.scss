@@ -12,9 +12,14 @@ h1 {
 h2 {
   font-size: 3.6rem;
 
-  @include respond(sx-phone) {
+  @include respond(m-phone2) {
     font-size: 3rem;
   }
+
+  @include respond(m-phone4) {
+    font-size: 2.4rem;
+  }
+
 }
 
 h3 {

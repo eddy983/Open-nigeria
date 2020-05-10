@@ -74,9 +74,6 @@
       height: 47.5rem;
     }
 
-    @include respond(sx-phone) {
-      height: 49.5rem;
-    }
 
     &__inner {
       @include flex;
@@ -85,6 +82,14 @@
       background: $color-white;
       height: 57%;
       align-items: baseline;
+
+      @include respond(tab-land) {
+        height: 45%;
+      }
+
+      @include respond(phone) {
+        height: 60%;
+      }
     }
 
     &__sub {

@@ -14,6 +14,10 @@
   background-position: bottom;
 
   @include respond(tab-land) {
+    height: 80vh;
+  }
+
+  @include respond(tab-land2) {
     height: 50vh;
   }
 
