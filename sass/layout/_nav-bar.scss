@@ -97,7 +97,7 @@
     transition: all 0.3s;
     @include flex;
     @include ai-c;
-    @include jc-sb;
+    justify-content: flex-end;
     width: 66%;
 
     @include respond(tab-land) {

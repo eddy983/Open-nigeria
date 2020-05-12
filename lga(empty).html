@@ -26,8 +26,9 @@
 <body>
   <nav class="nav-bar" id="nav">
     <div class="nav-bar__main">
-      <a href="home.html">
-        <img src="assets/img/Logo-black.svg" alt="Logo" class="nav-bar__logo"/>
+      <a href="lagos.html" class="nav-bar__con">
+        <img src="assets/img/setting_lagos-logo.png" alt="Logo" class="nav-bar__logo" />
+        Lagos State
       </a>
       <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
       <a href="javascript:void(0);" class="icon nav-bar__menu" onclick="myFunction()">
@@ -36,6 +37,11 @@
     </div>
     <div class="nav-bar__items" id="myLinks">
       <ul class="nav-bar__links">
+        <a href="infographics.html" class="nav-bar__link__link">
+          <li class="nav-bar__link">
+            HOME
+          </li>
+        </a>
         <li class="nav-bar__link tab-port">
           <div class="dropdown">
             <button class="dropbtn" onclick="myDown()">STATE
@@ -49,31 +55,21 @@
           </div>
         </li>
         <a href="infographics.html" class="nav-bar__link__link">
-          <li class="nav-bar__link nav-bar__link--1">
+          <li class="nav-bar__link">
             INFOGRAHPICS
           </li>
         </a>
-        <a href="interactive.html" class="nav-bar__link__link">
-          <li class="nav-bar__link nav-bar__link--1">
-            INTERACTIVE
+        <a href="documents(lagos).html" class="nav-bar__link__link">
+          <li class="nav-bar__link">
+            DATA
           </li>
         </a>
-        <a href="capital-projects.html" class="nav-bar__link__link">
-          <li class="nav-bar__link nav-bar__link--1">
-            CAPITAL PROJECTS
+        <a href="contact(lagos).html" class="nav-bar__link__link">
+          <li class="nav-bar__link">
+            FEEDBACK
           </li>
         </a>
       </ul>
-    </div>
-
-    <div class="search" id="search">
-      <input class="search__input" type="text"
-        placeholder="SEARCH FOR DOCUMENT (e.g KADUNA STATE PROPOSED BUDGET 2019 ">
-      <div class="search__btn">
-        <a href="#nav" class="search__link">
-          <p class="search__close">&otimes;</p>
-        </a>
-      </div>
     </div>
   </nav>
 
